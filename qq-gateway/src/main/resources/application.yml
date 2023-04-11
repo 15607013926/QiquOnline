@@ -1,0 +1,80 @@
+server:
+  port: 60010
+spring:
+  application:
+    name: xc-gateway
+  redis:
+    host: 192.168.136.150
+    port: 6379
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.136.150:8848   #注册中心nacos地址
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]': # 匹配所有请求
+            allowedOrigins: "*" #跨域处理 允许所有的域
+            allowedMethods: # 支持的方法
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        - id: content
+          uri: lb://xc-content-service
+          predicates:
+            - Path=/content/**
+          filters:
+            - StripPrefix=1
+        - id: system
+          uri: lb://xc-system-service
+          predicates:
+            - Path=/system/**
+          filters:
+            - StripPrefix=1
+        - id: media
+          uri: lb://xc-media-service
+          predicates:
+            - Path=/media/**
+          filters:
+            - StripPrefix=1
+        - id: auth
+          uri: lb://xc-system-service
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix=1
+        - id: basic
+          uri: lb://xc-basic-service
+          predicates:
+            - Path=/basic/**
+          filters:
+            - StripPrefix=1
+        - id: order
+          uri: lb://xc-order-service
+          predicates:
+            - Path=/order/**
+          filters:
+            - StripPrefix=1
+        - id: teaching
+          uri: lb://xc-teaching-service
+          predicates:
+            - Path=/teaching/**
+          filters:
+            - StripPrefix=1
+        - id: search
+          uri: lb://xc-search-service
+          predicates:
+            - Path=/search/**
+          filters:
+            - StripPrefix=1
+        - id: learning
+          uri: lb://xc-learning-service
+          predicates:
+            - Path=/learning/**
+          filters:
+            - StripPrefix=1
+logging:
+  level:
+    com.alibaba.nacos.client.*: WARN
