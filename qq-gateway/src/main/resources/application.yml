@@ -2,14 +2,14 @@ server:
   port: 60010
 spring:
   application:
-    name: xc-gateway
+    name: qq-gateway
   redis:
-    host: 192.168.136.150
+    host: 152.32.252.204
     port: 6379
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.136.150:8848   #注册中心nacos地址
+        server-addr: 152.32.252.204:8848   #注册中心nacos地址
     gateway:
       globalcors:
         cors-configurations:
@@ -22,55 +22,55 @@ spring:
               - DELETE
       routes:
         - id: content
-          uri: lb://xc-content-service
+          uri: lb://qq-content-service
           predicates:
             - Path=/content/**
           filters:
             - StripPrefix=1
         - id: system
-          uri: lb://xc-system-service
+          uri: lb://qq-system-service
           predicates:
             - Path=/system/**
           filters:
             - StripPrefix=1
         - id: media
-          uri: lb://xc-media-service
+          uri: lb://qq-media-service
           predicates:
             - Path=/media/**
           filters:
             - StripPrefix=1
         - id: auth
-          uri: lb://xc-system-service
+          uri: lb://qq-system-service
           predicates:
             - Path=/auth/**
           filters:
             - StripPrefix=1
         - id: basic
-          uri: lb://xc-basic-service
+          uri: lb://qq-basic-service
           predicates:
             - Path=/basic/**
           filters:
             - StripPrefix=1
         - id: order
-          uri: lb://xc-order-service
+          uri: lb://qq-order-service
           predicates:
             - Path=/order/**
           filters:
             - StripPrefix=1
         - id: teaching
-          uri: lb://xc-teaching-service
+          uri: lb://qq-teaching-service
           predicates:
             - Path=/teaching/**
           filters:
             - StripPrefix=1
         - id: search
-          uri: lb://xc-search-service
+          uri: lb://qq-search-service
           predicates:
             - Path=/search/**
           filters:
             - StripPrefix=1
         - id: learning
-          uri: lb://xc-learning-service
+          uri: lb://qq-learning-service
           predicates:
             - Path=/learning/**
           filters:

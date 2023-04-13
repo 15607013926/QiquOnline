@@ -9,18 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>qq-framework</artifactId>
+    <artifactId>qq-model-system</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>qq-framework-commons</module>
-        <module>qq-framework-web</module>
-        <module>qq-framework-generator</module>
-        <module>qq-framework-mybatis-plus</module>
+        <module>qq-system-service</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>12</maven.compiler.source>
+        <maven.compiler.target>12</maven.compiler.target>
     </properties>
 
 </project>

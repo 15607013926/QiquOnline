@@ -1,0 +1,243 @@
+[qq-system-service] 2023-04-12 01:39:12,108 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-04-12 01:39:12,610 INFO [main][RepositoryConfigurationDelegate.java:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[qq-system-service] 2023-04-12 01:39:12,614 INFO [main][RepositoryConfigurationDelegate.java:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[qq-system-service] 2023-04-12 01:39:12,635 INFO [main][RepositoryConfigurationDelegate.java:187] - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+[qq-system-service] 2023-04-12 01:39:12,757 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-04-12 01:39:12,758 WARN [main][Logger.java:44] - No MyBatis mapper was found in '[com.qiqu.system.mapper]' package. Please check your configuration.
+[qq-system-service] 2023-04-12 01:39:12,803 INFO [main][GenericScope.java:295] - BeanFactory id=8f9e922f-d407-3893-b289-4d5b3d4290d6
+[qq-system-service] 2023-04-12 01:39:13,074 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60080 (http)
+[qq-system-service] 2023-04-12 01:39:13,083 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-04-12 01:39:13,083 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-04-12 01:39:13,084 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-04-12 01:39:13,186 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-04-12 01:39:13,186 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1055 ms
+[qq-system-service] 2023-04-12 01:39:13,230 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-04-12 01:39:13,230 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-04-12 01:39:13,234 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-04-12 01:39:13,234 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-04-12 01:39:13,383 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-04-12 01:39:13,646 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-04-12 01:39:13,967 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+[qq-system-service] 2023-04-12 01:39:14,298 DEBUG [main][InternalLoggerFactory.java:63] - Using SLF4J as the default logging framework
+[qq-system-service] 2023-04-12 01:39:14,301 DEBUG [main][DefaultClientResources.java:108] - -Dio.netty.eventLoopThreads: 8
+[qq-system-service] 2023-04-12 01:39:14,319 DEBUG [main][DefaultEventLoopGroupProvider.java:196] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+[qq-system-service] 2023-04-12 01:39:14,358 DEBUG [main][InternalThreadLocalMap.java:83] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[qq-system-service] 2023-04-12 01:39:14,358 DEBUG [main][InternalThreadLocalMap.java:86] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[qq-system-service] 2023-04-12 01:39:14,364 DEBUG [main][ResourceLeakDetector.java:129] - -Dio.netty.leakDetection.level: simple
+[qq-system-service] 2023-04-12 01:39:14,365 DEBUG [main][ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.targetRecords: 4
+[qq-system-service] 2023-04-12 01:39:14,367 DEBUG [main][ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5fdb7394
+[qq-system-service] 2023-04-12 01:39:14,370 DEBUG [main][PlatformDependent.java:1037] - Platform: Windows
+[qq-system-service] 2023-04-12 01:39:14,372 DEBUG [main][PlatformDependent0.java:417] - -Dio.netty.noUnsafe: false
+[qq-system-service] 2023-04-12 01:39:14,373 DEBUG [main][PlatformDependent0.java:897] - Java version: 12
+[qq-system-service] 2023-04-12 01:39:14,374 DEBUG [main][PlatformDependent0.java:130] - sun.misc.Unsafe.theUnsafe: available
+[qq-system-service] 2023-04-12 01:39:14,375 DEBUG [main][PlatformDependent0.java:154] - sun.misc.Unsafe.copyMemory: available
+[qq-system-service] 2023-04-12 01:39:14,377 DEBUG [main][PlatformDependent0.java:192] - java.nio.Buffer.address: available
+[qq-system-service] 2023-04-12 01:39:14,377 DEBUG [main][PlatformDependent0.java:266] - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:310)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:93)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:179)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:163)
+	at io.lettuce.core.resource.DefaultClientResources.<init>(DefaultClientResources.java:183)
+	at io.lettuce.core.resource.DefaultClientResources$Builder.build(DefaultClientResources.java:562)
+	at io.lettuce.core.resource.DefaultClientResources.create(DefaultClientResources.java:247)
+	at org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration.lettuceClientResources(LettuceConnectionConfiguration.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qiqu.system.SystemApplication.main(SystemApplication.java:20)
+[qq-system-service] 2023-04-12 01:39:14,387 DEBUG [main][PlatformDependent0.java:331] - java.nio.Bits.unaligned: available, true
+[qq-system-service] 2023-04-12 01:39:14,389 DEBUG [main][PlatformDependent0.java:390] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @e260766
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:639)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:559)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:310)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:93)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:179)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:163)
+	at io.lettuce.core.resource.DefaultClientResources.<init>(DefaultClientResources.java:183)
+	at io.lettuce.core.resource.DefaultClientResources$Builder.build(DefaultClientResources.java:562)
+	at io.lettuce.core.resource.DefaultClientResources.create(DefaultClientResources.java:247)
+	at org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration.lettuceClientResources(LettuceConnectionConfiguration.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qiqu.system.SystemApplication.main(SystemApplication.java:20)
+[qq-system-service] 2023-04-12 01:39:14,390 DEBUG [main][PlatformDependent0.java:403] - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[qq-system-service] 2023-04-12 01:39:14,390 DEBUG [main][PlatformDependent.java:1080] - sun.misc.Unsafe: available
+[qq-system-service] 2023-04-12 01:39:14,391 DEBUG [main][PlatformDependent.java:1182] - maxDirectMemory: 4221566976 bytes (maybe)
+[qq-system-service] 2023-04-12 01:39:14,391 DEBUG [main][PlatformDependent.java:1201] - -Dio.netty.tmpdir: C:\Users\12441\AppData\Local\Temp (java.io.tmpdir)
+[qq-system-service] 2023-04-12 01:39:14,392 DEBUG [main][PlatformDependent.java:1280] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[qq-system-service] 2023-04-12 01:39:14,393 DEBUG [main][PlatformDependent.java:178] - -Dio.netty.maxDirectMemory: -1 bytes
+[qq-system-service] 2023-04-12 01:39:14,393 DEBUG [main][PlatformDependent.java:185] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[qq-system-service] 2023-04-12 01:39:14,394 DEBUG [main][CleanerJava9.java:71] - java.nio.ByteBuffer.cleaner(): available
+[qq-system-service] 2023-04-12 01:39:14,395 DEBUG [main][PlatformDependent.java:205] - -Dio.netty.noPreferDirect: false
+[qq-system-service] 2023-04-12 01:39:14,396 DEBUG [main][PlatformDependent.java:941] - org.jctools-core.MpscChunkedArrayQueue: available
+[qq-system-service] 2023-04-12 01:39:14,409 DEBUG [main][Loggers.java:249] - Using Slf4j logging framework
+[qq-system-service] 2023-04-12 01:39:14,428 DEBUG [main][DefaultClientResources.java:204] - LatencyUtils/HdrUtils are not available, metrics are disabled
+[qq-system-service] 2023-04-12 01:39:14,493 DEBUG [main][PooledByteBufAllocator.java:154] - -Dio.netty.allocator.numHeapArenas: 16
+[qq-system-service] 2023-04-12 01:39:14,493 DEBUG [main][PooledByteBufAllocator.java:155] - -Dio.netty.allocator.numDirectArenas: 16
+[qq-system-service] 2023-04-12 01:39:14,494 DEBUG [main][PooledByteBufAllocator.java:157] - -Dio.netty.allocator.pageSize: 8192
+[qq-system-service] 2023-04-12 01:39:14,494 DEBUG [main][PooledByteBufAllocator.java:162] - -Dio.netty.allocator.maxOrder: 11
+[qq-system-service] 2023-04-12 01:39:14,494 DEBUG [main][PooledByteBufAllocator.java:166] - -Dio.netty.allocator.chunkSize: 16777216
+[qq-system-service] 2023-04-12 01:39:14,494 DEBUG [main][PooledByteBufAllocator.java:167] - -Dio.netty.allocator.smallCacheSize: 256
+[qq-system-service] 2023-04-12 01:39:14,494 DEBUG [main][PooledByteBufAllocator.java:168] - -Dio.netty.allocator.normalCacheSize: 64
+[qq-system-service] 2023-04-12 01:39:14,494 DEBUG [main][PooledByteBufAllocator.java:169] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[qq-system-service] 2023-04-12 01:39:14,494 DEBUG [main][PooledByteBufAllocator.java:170] - -Dio.netty.allocator.cacheTrimInterval: 8192
+[qq-system-service] 2023-04-12 01:39:14,495 DEBUG [main][PooledByteBufAllocator.java:171] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[qq-system-service] 2023-04-12 01:39:14,495 DEBUG [main][PooledByteBufAllocator.java:172] - -Dio.netty.allocator.useCacheForAllThreads: true
+[qq-system-service] 2023-04-12 01:39:14,495 DEBUG [main][PooledByteBufAllocator.java:173] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[qq-system-service] 2023-04-12 01:39:14,837 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-04-12 01:39:24,357 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-04-12 01:39:24,379 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 60080 (http) with context path ''
+[qq-system-service] 2023-04-12 01:39:33,415 ERROR [main][NacosServiceRegistry.java:79] - nacos registry, qq-system-service register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='152.32.252.204:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='qq-system-service', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.136.1', networkInterface='', port=60080, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null}},
+ErrCode:500, ErrMsg:failed to req API:/nacos/v1/ns/instance after all servers([152.32.252.204:8848]) tried: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:246)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:212)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:74)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:239)
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:138)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:101)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:88)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:46)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qiqu.system.SystemApplication.main(SystemApplication.java:20)
+[qq-system-service] 2023-04-12 01:39:33,416 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+[qq-system-service] 2023-04-12 01:39:33,419 DEBUG [main][AbstractRedisClient.java:474] - Initiate shutdown (100, 100, MILLISECONDS)
+[qq-system-service] 2023-04-12 01:39:33,429 DEBUG [main][DefaultClientResources.java:631] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-04-12 01:39:33,431 DEBUG [main][DefaultEventLoopGroupProvider.java:263] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-04-12 01:39:42,511 INFO [main][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-04-12 01:39:42,623 INFO [main][DirectJDKLog.java:173] - Pausing ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-04-12 01:39:42,623 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-04-12 01:39:42,628 INFO [main][DirectJDKLog.java:173] - Stopping ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-04-12 01:39:42,631 INFO [main][DirectJDKLog.java:173] - Destroying ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-04-12 01:39:42,640 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-04-12 01:39:42,647 ERROR [main][SpringApplication.java:837] - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qiqu.system.SystemApplication.main(SystemApplication.java:20)
+Caused by: java.lang.reflect.UndeclaredThrowableException
+	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:239)
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:138)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:101)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:88)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:46)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	... 14 more
+Caused by: ErrCode:500, ErrMsg:failed to req API:/nacos/v1/ns/instance after all servers([152.32.252.204:8848]) tried: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:246)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:212)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:74)
+	... 27 more
+[qq-system-service] 2023-04-12 01:43:44,963 WARN [Thread-4][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-04-12 01:43:44,963 WARN [Thread-10][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-04-12 01:43:44,963 WARN [Thread-10][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-04-12 01:43:44,964 WARN [Thread-4][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
