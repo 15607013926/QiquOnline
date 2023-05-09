@@ -1,6 +1,7 @@
 package com.qiqu.content.controller;
 
 import com.qiqu.commons.model.dto.CourseDto;
+import com.qiqu.commons.model.dto.CourseListRequestDto;
 import com.qiqu.commons.model.dto.PageRequest;
 import com.qiqu.commons.model.vo.ResponseResult;
 import io.swagger.annotations.Api;
@@ -39,7 +40,9 @@ public class CourseBaseController {
 
     // 课程信息分页查询
     @PostMapping("/list")
-    public ResponseResult findByPage(PageRequest request, @RequestBody CourseDto dto){
+    public ResponseResult findByPage(@RequestBody CourseListRequestDto courseListRequestDto){
+        PageRequest request = courseListRequestDto.getRequest();
+        CourseDto dto = courseListRequestDto.getDto();
         return courseBaseService.findByPage(request,dto);
     }
 }

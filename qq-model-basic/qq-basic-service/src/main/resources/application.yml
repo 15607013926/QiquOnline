@@ -1,0 +1,38 @@
+server:
+  port: 60020
+  servlet:
+    encoding:
+      charset: UTF-8
+#微服务启动参数
+spring:
+  application:
+    name: qq-basic-service
+  cloud:
+    nacos:
+      discovery:      #配置注册中心
+        server-addr: 192.168.136.150:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.136.150:3306/qq-basic?userUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+# 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml
+  level:
+    com:
+      alibaba:
+        nacos:
+          client:
+            naming: warn
+            config.impl: warn
+mybatis-plus:
+  #别名包设置
+  type-aliases-package: com.qiqu.*.domain
+  # 映射文件mapper文件存储位置
+  mapper-locations: classpath*:mappers/*.xml  #加载 mybatis 映射文件的位置
+  global-config:
+    db-config:
+      id-type: auto # 注解策略
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #输出sql日志

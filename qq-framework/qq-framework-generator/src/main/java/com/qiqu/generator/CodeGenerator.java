@@ -10,12 +10,12 @@ import java.util.Collections;
 
 public class CodeGenerator {
 
-      private static final String SERVICE_NAME = "content";
+    // private static final String SERVICE_NAME = "content";
     // private static final String SERVICE_NAME = "learning";
     // private static final String SERVICE_NAME = "media";
     //private static final String SERVICE_NAME = "system";
     // private static final String SERVICE_NAME = "system";
-    // private static final String SERVICE_NAME = "basic";
+     private static final String SERVICE_NAME = "basic";
 
     //代码生成
     public static void main(String[] args) {
