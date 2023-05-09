@@ -1,5 +1,8 @@
 package com.qiqu.system.service;
 
+import com.qiqu.commons.model.dto.LoginDto;
+import com.qiqu.commons.model.dto.RegisterDto;
+import com.qiqu.commons.model.vo.ResponseResult;
 import com.qiqu.system.domain.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +16,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface UserService extends IService<User> {
 
+    //用户登录
+    ResponseResult login(LoginDto loginDto);
+
+    //用户注册
+    ResponseResult register(RegisterDto registerDto);
 }

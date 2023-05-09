@@ -1,0 +1,42 @@
+[qq-system-service] 2023-05-06 23:04:24,578 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 60030 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 60030 or configure this application to listen on another port.
+
+[qq-system-service] 2023-05-06 23:05:15,922 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 60030 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 60030 or configure this application to listen on another port.
+
+[qq-system-service] 2023-05-06 23:54:10,895 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 60030 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 60030 or configure this application to listen on another port.
+

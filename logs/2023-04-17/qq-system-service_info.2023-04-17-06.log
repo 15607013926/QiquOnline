@@ -1,0 +1,150 @@
+[qq-system-service] 2023-04-17 06:15:07,070 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-04-17 06:15:07,780 INFO [main][RepositoryConfigurationDelegate.java:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[qq-system-service] 2023-04-17 06:15:07,784 INFO [main][RepositoryConfigurationDelegate.java:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[qq-system-service] 2023-04-17 06:15:07,812 INFO [main][RepositoryConfigurationDelegate.java:187] - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+[qq-system-service] 2023-04-17 06:15:07,933 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-04-17 06:15:07,987 INFO [main][GenericScope.java:295] - BeanFactory id=8f87181c-32a3-3914-a786-b306d38abe7d
+[qq-system-service] 2023-04-17 06:15:08,263 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60080 (http)
+[qq-system-service] 2023-04-17 06:15:08,271 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-04-17 06:15:08,272 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-04-17 06:15:08,272 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-04-17 06:15:08,398 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-04-17 06:15:08,398 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1308 ms
+[qq-system-service] 2023-04-17 06:15:08,582 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-04-17 06:15:09,876 DEBUG [main][InternalLoggerFactory.java:63] - Using SLF4J as the default logging framework
+[qq-system-service] 2023-04-17 06:15:09,881 DEBUG [main][DefaultClientResources.java:108] - -Dio.netty.eventLoopThreads: 8
+[qq-system-service] 2023-04-17 06:15:09,890 DEBUG [main][DefaultEventLoopGroupProvider.java:196] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+[qq-system-service] 2023-04-17 06:15:09,908 DEBUG [main][InternalThreadLocalMap.java:83] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[qq-system-service] 2023-04-17 06:15:09,908 DEBUG [main][InternalThreadLocalMap.java:86] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[qq-system-service] 2023-04-17 06:15:09,914 DEBUG [main][ResourceLeakDetector.java:129] - -Dio.netty.leakDetection.level: simple
+[qq-system-service] 2023-04-17 06:15:09,914 DEBUG [main][ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.targetRecords: 4
+[qq-system-service] 2023-04-17 06:15:09,919 DEBUG [main][ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6ad179b4
+[qq-system-service] 2023-04-17 06:15:09,926 DEBUG [main][PlatformDependent.java:1037] - Platform: Windows
+[qq-system-service] 2023-04-17 06:15:09,929 DEBUG [main][PlatformDependent0.java:417] - -Dio.netty.noUnsafe: false
+[qq-system-service] 2023-04-17 06:15:09,931 DEBUG [main][PlatformDependent0.java:897] - Java version: 8
+[qq-system-service] 2023-04-17 06:15:09,932 DEBUG [main][PlatformDependent0.java:130] - sun.misc.Unsafe.theUnsafe: available
+[qq-system-service] 2023-04-17 06:15:09,933 DEBUG [main][PlatformDependent0.java:154] - sun.misc.Unsafe.copyMemory: available
+[qq-system-service] 2023-04-17 06:15:09,934 DEBUG [main][PlatformDependent0.java:192] - java.nio.Buffer.address: available
+[qq-system-service] 2023-04-17 06:15:09,936 DEBUG [main][PlatformDependent0.java:257] - direct buffer constructor: available
+[qq-system-service] 2023-04-17 06:15:09,937 DEBUG [main][PlatformDependent0.java:331] - java.nio.Bits.unaligned: available, true
+[qq-system-service] 2023-04-17 06:15:09,938 DEBUG [main][PlatformDependent0.java:396] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[qq-system-service] 2023-04-17 06:15:09,938 DEBUG [main][PlatformDependent0.java:403] - java.nio.DirectByteBuffer.<init>(long, int): available
+[qq-system-service] 2023-04-17 06:15:09,938 DEBUG [main][PlatformDependent.java:1080] - sun.misc.Unsafe: available
+[qq-system-service] 2023-04-17 06:15:09,940 DEBUG [main][PlatformDependent.java:1201] - -Dio.netty.tmpdir: C:\Users\12441\AppData\Local\Temp (java.io.tmpdir)
+[qq-system-service] 2023-04-17 06:15:09,941 DEBUG [main][PlatformDependent.java:1280] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[qq-system-service] 2023-04-17 06:15:09,943 DEBUG [main][PlatformDependent.java:178] - -Dio.netty.maxDirectMemory: 3752853504 bytes
+[qq-system-service] 2023-04-17 06:15:09,943 DEBUG [main][PlatformDependent.java:185] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[qq-system-service] 2023-04-17 06:15:09,944 DEBUG [main][CleanerJava6.java:92] - java.nio.ByteBuffer.cleaner(): available
+[qq-system-service] 2023-04-17 06:15:09,945 DEBUG [main][PlatformDependent.java:205] - -Dio.netty.noPreferDirect: false
+[qq-system-service] 2023-04-17 06:15:09,949 DEBUG [main][PlatformDependent.java:941] - org.jctools-core.MpscChunkedArrayQueue: available
+[qq-system-service] 2023-04-17 06:15:09,963 DEBUG [main][Loggers.java:249] - Using Slf4j logging framework
+[qq-system-service] 2023-04-17 06:15:09,985 DEBUG [main][DefaultClientResources.java:204] - LatencyUtils/HdrUtils are not available, metrics are disabled
+[qq-system-service] 2023-04-17 06:15:10,043 DEBUG [main][PooledByteBufAllocator.java:154] - -Dio.netty.allocator.numHeapArenas: 16
+[qq-system-service] 2023-04-17 06:15:10,044 DEBUG [main][PooledByteBufAllocator.java:155] - -Dio.netty.allocator.numDirectArenas: 16
+[qq-system-service] 2023-04-17 06:15:10,044 DEBUG [main][PooledByteBufAllocator.java:157] - -Dio.netty.allocator.pageSize: 8192
+[qq-system-service] 2023-04-17 06:15:10,044 DEBUG [main][PooledByteBufAllocator.java:162] - -Dio.netty.allocator.maxOrder: 11
+[qq-system-service] 2023-04-17 06:15:10,044 DEBUG [main][PooledByteBufAllocator.java:166] - -Dio.netty.allocator.chunkSize: 16777216
+[qq-system-service] 2023-04-17 06:15:10,044 DEBUG [main][PooledByteBufAllocator.java:167] - -Dio.netty.allocator.smallCacheSize: 256
+[qq-system-service] 2023-04-17 06:15:10,044 DEBUG [main][PooledByteBufAllocator.java:168] - -Dio.netty.allocator.normalCacheSize: 64
+[qq-system-service] 2023-04-17 06:15:10,045 DEBUG [main][PooledByteBufAllocator.java:169] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[qq-system-service] 2023-04-17 06:15:10,045 DEBUG [main][PooledByteBufAllocator.java:170] - -Dio.netty.allocator.cacheTrimInterval: 8192
+[qq-system-service] 2023-04-17 06:15:10,045 DEBUG [main][PooledByteBufAllocator.java:171] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[qq-system-service] 2023-04-17 06:15:10,045 DEBUG [main][PooledByteBufAllocator.java:172] - -Dio.netty.allocator.useCacheForAllThreads: true
+[qq-system-service] 2023-04-17 06:15:10,045 DEBUG [main][PooledByteBufAllocator.java:173] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[qq-system-service] 2023-04-17 06:15:10,512 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-04-17 06:15:10,513 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-04-17 06:15:10,518 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-04-17 06:15:10,518 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-04-17 06:15:10,599 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-04-17 06:15:10,847 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-04-17 06:15:10,979 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-04-17 06:15:11,587 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-04-17 06:15:11,603 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 60080 (http) with context path ''
+[qq-system-service] 2023-04-17 06:15:11,755 INFO [main][NacosServiceRegistry.java:75] - nacos registry, DEFAULT_GROUP qq-system-service 192.168.136.1:60080 register finished
+[qq-system-service] 2023-04-17 06:15:12,007 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-04-17 06:15:12,040 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-04-17 06:15:12,063 INFO [main][StartupInfoLogger.java:61] - Started SystemApplication in 5.926 seconds (JVM running for 7.417)
+[qq-system-service] 2023-04-17 06:15:12,619 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@90a329d will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@374b6e33
+[qq-system-service] 2023-04-17 06:15:14,291 WARN [Thread-15][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-04-17 06:15:14,291 WARN [Thread-22][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-04-17 06:15:14,291 WARN [Thread-22][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-04-17 06:15:14,292 WARN [Thread-15][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-04-17 06:15:14,421 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-04-17 06:15:14,423 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:90] - De-registering from Nacos Server now...
+[qq-system-service] 2023-04-17 06:15:14,428 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:110] - De-registration finished.
+[qq-system-service] 2023-04-17 06:15:15,436 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@6b9733e0 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@374b6e33
+[qq-system-service] 2023-04-17 06:15:22,686 WARN [SpringContextShutdownHook][DisposableBeanAdapter.java:290] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+[qq-system-service] 2023-04-17 06:15:22,686 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-04-17 06:15:22,691 DEBUG [SpringContextShutdownHook][AbstractRedisClient.java:474] - Initiate shutdown (100, 100, MILLISECONDS)
+[qq-system-service] 2023-04-17 06:15:22,699 DEBUG [SpringContextShutdownHook][DefaultClientResources.java:631] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-04-17 06:15:22,701 DEBUG [SpringContextShutdownHook][DefaultEventLoopGroupProvider.java:263] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-04-17 06:15:28,333 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-04-17 06:15:29,123 INFO [main][RepositoryConfigurationDelegate.java:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[qq-system-service] 2023-04-17 06:15:29,125 INFO [main][RepositoryConfigurationDelegate.java:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[qq-system-service] 2023-04-17 06:15:29,142 INFO [main][RepositoryConfigurationDelegate.java:187] - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+[qq-system-service] 2023-04-17 06:15:29,263 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-04-17 06:15:29,355 INFO [main][GenericScope.java:295] - BeanFactory id=8f87181c-32a3-3914-a786-b306d38abe7d
+[qq-system-service] 2023-04-17 06:15:29,763 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60080 (http)
+[qq-system-service] 2023-04-17 06:15:29,787 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-04-17 06:15:29,788 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-04-17 06:15:29,788 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-04-17 06:15:29,983 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-04-17 06:15:29,983 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1630 ms
+[qq-system-service] 2023-04-17 06:15:30,178 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-04-17 06:15:30,882 DEBUG [main][InternalLoggerFactory.java:63] - Using SLF4J as the default logging framework
+[qq-system-service] 2023-04-17 06:15:30,884 DEBUG [main][DefaultClientResources.java:108] - -Dio.netty.eventLoopThreads: 8
+[qq-system-service] 2023-04-17 06:15:30,889 DEBUG [main][DefaultEventLoopGroupProvider.java:196] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+[qq-system-service] 2023-04-17 06:15:30,902 DEBUG [main][InternalThreadLocalMap.java:83] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[qq-system-service] 2023-04-17 06:15:30,903 DEBUG [main][InternalThreadLocalMap.java:86] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[qq-system-service] 2023-04-17 06:15:30,906 DEBUG [main][ResourceLeakDetector.java:129] - -Dio.netty.leakDetection.level: simple
+[qq-system-service] 2023-04-17 06:15:30,906 DEBUG [main][ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.targetRecords: 4
+[qq-system-service] 2023-04-17 06:15:30,907 DEBUG [main][ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7e7743ec
+[qq-system-service] 2023-04-17 06:15:30,910 DEBUG [main][PlatformDependent.java:1037] - Platform: Windows
+[qq-system-service] 2023-04-17 06:15:30,912 DEBUG [main][PlatformDependent0.java:417] - -Dio.netty.noUnsafe: false
+[qq-system-service] 2023-04-17 06:15:30,912 DEBUG [main][PlatformDependent0.java:897] - Java version: 8
+[qq-system-service] 2023-04-17 06:15:30,913 DEBUG [main][PlatformDependent0.java:130] - sun.misc.Unsafe.theUnsafe: available
+[qq-system-service] 2023-04-17 06:15:30,914 DEBUG [main][PlatformDependent0.java:154] - sun.misc.Unsafe.copyMemory: available
+[qq-system-service] 2023-04-17 06:15:30,914 DEBUG [main][PlatformDependent0.java:192] - java.nio.Buffer.address: available
+[qq-system-service] 2023-04-17 06:15:30,915 DEBUG [main][PlatformDependent0.java:257] - direct buffer constructor: available
+[qq-system-service] 2023-04-17 06:15:30,916 DEBUG [main][PlatformDependent0.java:331] - java.nio.Bits.unaligned: available, true
+[qq-system-service] 2023-04-17 06:15:30,916 DEBUG [main][PlatformDependent0.java:396] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[qq-system-service] 2023-04-17 06:15:30,916 DEBUG [main][PlatformDependent0.java:403] - java.nio.DirectByteBuffer.<init>(long, int): available
+[qq-system-service] 2023-04-17 06:15:30,916 DEBUG [main][PlatformDependent.java:1080] - sun.misc.Unsafe: available
+[qq-system-service] 2023-04-17 06:15:30,917 DEBUG [main][PlatformDependent.java:1201] - -Dio.netty.tmpdir: C:\Users\12441\AppData\Local\Temp (java.io.tmpdir)
+[qq-system-service] 2023-04-17 06:15:30,917 DEBUG [main][PlatformDependent.java:1280] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[qq-system-service] 2023-04-17 06:15:30,918 DEBUG [main][PlatformDependent.java:178] - -Dio.netty.maxDirectMemory: 3752853504 bytes
+[qq-system-service] 2023-04-17 06:15:30,918 DEBUG [main][PlatformDependent.java:185] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[qq-system-service] 2023-04-17 06:15:30,918 DEBUG [main][CleanerJava6.java:92] - java.nio.ByteBuffer.cleaner(): available
+[qq-system-service] 2023-04-17 06:15:30,920 DEBUG [main][PlatformDependent.java:205] - -Dio.netty.noPreferDirect: false
+[qq-system-service] 2023-04-17 06:15:30,920 DEBUG [main][PlatformDependent.java:941] - org.jctools-core.MpscChunkedArrayQueue: available
+[qq-system-service] 2023-04-17 06:15:30,928 DEBUG [main][Loggers.java:249] - Using Slf4j logging framework
+[qq-system-service] 2023-04-17 06:15:30,943 DEBUG [main][DefaultClientResources.java:204] - LatencyUtils/HdrUtils are not available, metrics are disabled
+[qq-system-service] 2023-04-17 06:15:30,984 DEBUG [main][PooledByteBufAllocator.java:154] - -Dio.netty.allocator.numHeapArenas: 16
+[qq-system-service] 2023-04-17 06:15:30,984 DEBUG [main][PooledByteBufAllocator.java:155] - -Dio.netty.allocator.numDirectArenas: 16
+[qq-system-service] 2023-04-17 06:15:30,984 DEBUG [main][PooledByteBufAllocator.java:157] - -Dio.netty.allocator.pageSize: 8192
+[qq-system-service] 2023-04-17 06:15:30,984 DEBUG [main][PooledByteBufAllocator.java:162] - -Dio.netty.allocator.maxOrder: 11
+[qq-system-service] 2023-04-17 06:15:30,985 DEBUG [main][PooledByteBufAllocator.java:166] - -Dio.netty.allocator.chunkSize: 16777216
+[qq-system-service] 2023-04-17 06:15:30,985 DEBUG [main][PooledByteBufAllocator.java:167] - -Dio.netty.allocator.smallCacheSize: 256
+[qq-system-service] 2023-04-17 06:15:30,985 DEBUG [main][PooledByteBufAllocator.java:168] - -Dio.netty.allocator.normalCacheSize: 64
+[qq-system-service] 2023-04-17 06:15:30,985 DEBUG [main][PooledByteBufAllocator.java:169] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[qq-system-service] 2023-04-17 06:15:30,985 DEBUG [main][PooledByteBufAllocator.java:170] - -Dio.netty.allocator.cacheTrimInterval: 8192
+[qq-system-service] 2023-04-17 06:15:30,985 DEBUG [main][PooledByteBufAllocator.java:171] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[qq-system-service] 2023-04-17 06:15:30,985 DEBUG [main][PooledByteBufAllocator.java:172] - -Dio.netty.allocator.useCacheForAllThreads: true
+[qq-system-service] 2023-04-17 06:15:30,985 DEBUG [main][PooledByteBufAllocator.java:173] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[qq-system-service] 2023-04-17 06:15:31,440 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-04-17 06:15:31,442 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-04-17 06:15:31,446 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-04-17 06:15:31,446 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-04-17 06:15:31,544 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-04-17 06:15:31,897 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-04-17 06:15:32,062 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-04-17 06:15:32,713 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-04-17 06:15:32,733 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 60080 (http) with context path ''
+[qq-system-service] 2023-04-17 06:15:32,747 INFO [main][NacosServiceRegistry.java:75] - nacos registry, DEFAULT_GROUP qq-system-service 192.168.136.1:60080 register finished
+[qq-system-service] 2023-04-17 06:15:33,050 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-04-17 06:15:33,077 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-04-17 06:15:33,101 INFO [main][StartupInfoLogger.java:61] - Started SystemApplication in 6.102 seconds (JVM running for 7.257)
+[qq-system-service] 2023-04-17 06:15:33,741 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@7e29b240 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@7dd45c93
+[qq-system-service] 2023-04-17 06:15:46,273 INFO [http-nio-60080-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[qq-system-service] 2023-04-17 06:15:46,274 INFO [http-nio-60080-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[qq-system-service] 2023-04-17 06:15:46,278 INFO [http-nio-60080-exec-1][FrameworkServlet.java:547] - Completed initialization in 3 ms

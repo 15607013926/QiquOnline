@@ -1,0 +1,12 @@
+[qq-system-service] 2023-04-17 22:09:31,989 WARN [Thread-14][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-04-17 22:09:31,989 WARN [Thread-20][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-04-17 22:09:32,001 WARN [Thread-20][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-04-17 22:09:32,017 WARN [Thread-14][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-04-17 22:09:32,383 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-04-17 22:09:32,415 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:90] - De-registering from Nacos Server now...
+[qq-system-service] 2023-04-17 22:09:32,461 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:110] - De-registration finished.
+[qq-system-service] 2023-04-17 22:09:41,581 WARN [SpringContextShutdownHook][DisposableBeanAdapter.java:290] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+[qq-system-service] 2023-04-17 22:09:41,593 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-04-17 22:09:41,648 DEBUG [SpringContextShutdownHook][AbstractRedisClient.java:474] - Initiate shutdown (100, 100, MILLISECONDS)
+[qq-system-service] 2023-04-17 22:09:41,686 DEBUG [SpringContextShutdownHook][DefaultClientResources.java:631] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-04-17 22:09:41,696 DEBUG [SpringContextShutdownHook][DefaultEventLoopGroupProvider.java:263] - Initiate shutdown (0, 2, SECONDS)

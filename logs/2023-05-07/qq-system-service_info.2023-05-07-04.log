@@ -1,0 +1,4 @@
+[qq-system-service] 2023-05-07 05:09:23,396 WARN [Thread-18][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-05-07 05:09:23,396 WARN [Thread-24][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-05-07 05:09:23,399 WARN [Thread-24][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-05-07 05:09:23,399 WARN [Thread-18][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end

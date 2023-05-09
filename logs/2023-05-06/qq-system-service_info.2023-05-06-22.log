@@ -1,0 +1,528 @@
+[qq-system-service] 2023-05-06 22:10:17,021 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 22:10:18,099 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 22:10:18,170 INFO [main][GenericScope.java:295] - BeanFactory id=bcd7864a-44d2-32cd-9139-e5f4286fac6e
+[qq-system-service] 2023-05-06 22:10:18,492 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 22:10:18,501 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 22:10:18,501 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 22:10:18,501 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 22:10:18,636 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 22:10:18,636 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1593 ms
+[qq-system-service] 2023-05-06 22:10:18,815 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 22:10:19,539 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'interceptorConfig': Unsatisfied dependency expressed through field 'loginInterceptor'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginInterceptor': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[qq-system-service] 2023-05-06 22:10:19,541 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-05-06 22:10:19,550 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-05-06 22:10:19,696 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'redisConnectionFactory' in 'JedisConnectionConfiguration' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' in 'LettuceConnectionConfiguration' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+[qq-system-service] 2023-05-06 22:11:58,866 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 22:11:59,939 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 22:12:00,027 INFO [main][GenericScope.java:295] - BeanFactory id=bcd7864a-44d2-32cd-9139-e5f4286fac6e
+[qq-system-service] 2023-05-06 22:12:00,389 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 22:12:00,399 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 22:12:00,400 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 22:12:00,400 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 22:12:00,545 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 22:12:00,546 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1654 ms
+[qq-system-service] 2023-05-06 22:12:00,795 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 22:12:01,950 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'interceptorConfig': Unsatisfied dependency expressed through field 'loginInterceptor'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginInterceptor': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[qq-system-service] 2023-05-06 22:12:01,954 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-05-06 22:12:01,965 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-05-06 22:12:02,206 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'redisConnectionFactory' in 'JedisConnectionConfiguration' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' in 'LettuceConnectionConfiguration' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+[qq-system-service] 2023-05-06 22:12:07,415 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 22:12:08,394 INFO [main][RepositoryConfigurationDelegate.java:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[qq-system-service] 2023-05-06 22:12:08,397 INFO [main][RepositoryConfigurationDelegate.java:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[qq-system-service] 2023-05-06 22:12:08,415 INFO [main][RepositoryConfigurationDelegate.java:187] - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+[qq-system-service] 2023-05-06 22:12:08,541 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 22:12:08,605 INFO [main][GenericScope.java:295] - BeanFactory id=a77c6e23-b798-3fb5-8c9f-dbbb50aa64fc
+[qq-system-service] 2023-05-06 22:12:08,921 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60080 (http)
+[qq-system-service] 2023-05-06 22:12:08,928 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-05-06 22:12:08,929 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 22:12:08,929 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 22:12:09,010 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 22:12:09,010 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1573 ms
+[qq-system-service] 2023-05-06 22:12:09,151 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 22:12:09,765 DEBUG [main][InternalLoggerFactory.java:63] - Using SLF4J as the default logging framework
+[qq-system-service] 2023-05-06 22:12:09,769 DEBUG [main][DefaultClientResources.java:108] - -Dio.netty.eventLoopThreads: 8
+[qq-system-service] 2023-05-06 22:12:09,776 DEBUG [main][DefaultEventLoopGroupProvider.java:196] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+[qq-system-service] 2023-05-06 22:12:09,796 DEBUG [main][InternalThreadLocalMap.java:83] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[qq-system-service] 2023-05-06 22:12:09,796 DEBUG [main][InternalThreadLocalMap.java:86] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[qq-system-service] 2023-05-06 22:12:09,801 DEBUG [main][ResourceLeakDetector.java:129] - -Dio.netty.leakDetection.level: simple
+[qq-system-service] 2023-05-06 22:12:09,801 DEBUG [main][ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.targetRecords: 4
+[qq-system-service] 2023-05-06 22:12:09,804 DEBUG [main][ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2c7ad4f3
+[qq-system-service] 2023-05-06 22:12:09,807 DEBUG [main][PlatformDependent.java:1037] - Platform: Windows
+[qq-system-service] 2023-05-06 22:12:09,809 DEBUG [main][PlatformDependent0.java:417] - -Dio.netty.noUnsafe: false
+[qq-system-service] 2023-05-06 22:12:09,809 DEBUG [main][PlatformDependent0.java:897] - Java version: 8
+[qq-system-service] 2023-05-06 22:12:09,810 DEBUG [main][PlatformDependent0.java:130] - sun.misc.Unsafe.theUnsafe: available
+[qq-system-service] 2023-05-06 22:12:09,810 DEBUG [main][PlatformDependent0.java:154] - sun.misc.Unsafe.copyMemory: available
+[qq-system-service] 2023-05-06 22:12:09,811 DEBUG [main][PlatformDependent0.java:192] - java.nio.Buffer.address: available
+[qq-system-service] 2023-05-06 22:12:09,812 DEBUG [main][PlatformDependent0.java:257] - direct buffer constructor: available
+[qq-system-service] 2023-05-06 22:12:09,813 DEBUG [main][PlatformDependent0.java:331] - java.nio.Bits.unaligned: available, true
+[qq-system-service] 2023-05-06 22:12:09,813 DEBUG [main][PlatformDependent0.java:396] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[qq-system-service] 2023-05-06 22:12:09,813 DEBUG [main][PlatformDependent0.java:403] - java.nio.DirectByteBuffer.<init>(long, int): available
+[qq-system-service] 2023-05-06 22:12:09,813 DEBUG [main][PlatformDependent.java:1080] - sun.misc.Unsafe: available
+[qq-system-service] 2023-05-06 22:12:09,814 DEBUG [main][PlatformDependent.java:1201] - -Dio.netty.tmpdir: C:\Users\12441\AppData\Local\Temp (java.io.tmpdir)
+[qq-system-service] 2023-05-06 22:12:09,814 DEBUG [main][PlatformDependent.java:1280] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[qq-system-service] 2023-05-06 22:12:09,815 DEBUG [main][PlatformDependent.java:178] - -Dio.netty.maxDirectMemory: 3752853504 bytes
+[qq-system-service] 2023-05-06 22:12:09,815 DEBUG [main][PlatformDependent.java:185] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[qq-system-service] 2023-05-06 22:12:09,817 DEBUG [main][CleanerJava6.java:92] - java.nio.ByteBuffer.cleaner(): available
+[qq-system-service] 2023-05-06 22:12:09,817 DEBUG [main][PlatformDependent.java:205] - -Dio.netty.noPreferDirect: false
+[qq-system-service] 2023-05-06 22:12:09,818 DEBUG [main][PlatformDependent.java:941] - org.jctools-core.MpscChunkedArrayQueue: available
+[qq-system-service] 2023-05-06 22:12:09,829 DEBUG [main][Loggers.java:249] - Using Slf4j logging framework
+[qq-system-service] 2023-05-06 22:12:09,847 DEBUG [main][DefaultClientResources.java:204] - LatencyUtils/HdrUtils are not available, metrics are disabled
+[qq-system-service] 2023-05-06 22:12:09,886 DEBUG [main][PooledByteBufAllocator.java:154] - -Dio.netty.allocator.numHeapArenas: 16
+[qq-system-service] 2023-05-06 22:12:09,886 DEBUG [main][PooledByteBufAllocator.java:155] - -Dio.netty.allocator.numDirectArenas: 16
+[qq-system-service] 2023-05-06 22:12:09,886 DEBUG [main][PooledByteBufAllocator.java:157] - -Dio.netty.allocator.pageSize: 8192
+[qq-system-service] 2023-05-06 22:12:09,887 DEBUG [main][PooledByteBufAllocator.java:162] - -Dio.netty.allocator.maxOrder: 11
+[qq-system-service] 2023-05-06 22:12:09,887 DEBUG [main][PooledByteBufAllocator.java:166] - -Dio.netty.allocator.chunkSize: 16777216
+[qq-system-service] 2023-05-06 22:12:09,887 DEBUG [main][PooledByteBufAllocator.java:167] - -Dio.netty.allocator.smallCacheSize: 256
+[qq-system-service] 2023-05-06 22:12:09,887 DEBUG [main][PooledByteBufAllocator.java:168] - -Dio.netty.allocator.normalCacheSize: 64
+[qq-system-service] 2023-05-06 22:12:09,887 DEBUG [main][PooledByteBufAllocator.java:169] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[qq-system-service] 2023-05-06 22:12:09,887 DEBUG [main][PooledByteBufAllocator.java:170] - -Dio.netty.allocator.cacheTrimInterval: 8192
+[qq-system-service] 2023-05-06 22:12:09,887 DEBUG [main][PooledByteBufAllocator.java:171] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[qq-system-service] 2023-05-06 22:12:09,887 DEBUG [main][PooledByteBufAllocator.java:172] - -Dio.netty.allocator.useCacheForAllThreads: true
+[qq-system-service] 2023-05-06 22:12:09,888 DEBUG [main][PooledByteBufAllocator.java:173] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[qq-system-service] 2023-05-06 22:12:10,323 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 22:12:10,324 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 22:12:10,327 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 22:12:10,327 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 22:12:10,409 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 22:12:10,670 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 22:12:10,826 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-05-06 22:12:11,520 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-05-06 22:12:11,549 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 60080 (http) with context path ''
+[qq-system-service] 2023-05-06 22:12:11,581 INFO [main][NacosServiceRegistry.java:75] - nacos registry, DEFAULT_GROUP qq-system-service 192.168.136.1:60080 register finished
+[qq-system-service] 2023-05-06 22:12:11,935 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-05-06 22:12:11,942 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-05-06 22:12:11,960 INFO [main][StartupInfoLogger.java:61] - Started SystemApplication in 5.814 seconds (JVM running for 7.11)
+[qq-system-service] 2023-05-06 22:12:12,024 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@69f15e42 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@a97a895
+[qq-system-service] 2023-05-06 22:14:28,765 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 22:14:29,582 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 22:14:29,660 INFO [main][GenericScope.java:295] - BeanFactory id=bcd7864a-44d2-32cd-9139-e5f4286fac6e
+[qq-system-service] 2023-05-06 22:14:29,983 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 22:14:29,992 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 22:14:29,993 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 22:14:29,993 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 22:14:30,111 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 22:14:30,112 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1327 ms
+[qq-system-service] 2023-05-06 22:14:30,371 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 22:14:31,436 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'interceptorConfig': Unsatisfied dependency expressed through field 'loginInterceptor'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginInterceptor': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[qq-system-service] 2023-05-06 22:14:31,439 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-05-06 22:14:31,454 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-05-06 22:14:31,641 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'redisConnectionFactory' in 'JedisConnectionConfiguration' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' in 'LettuceConnectionConfiguration' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+[qq-system-service] 2023-05-06 22:23:26,213 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 22:23:26,982 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 22:23:27,047 INFO [main][GenericScope.java:295] - BeanFactory id=bcd7864a-44d2-32cd-9139-e5f4286fac6e
+[qq-system-service] 2023-05-06 22:23:27,368 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 22:23:27,378 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 22:23:27,379 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 22:23:27,379 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 22:23:27,525 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 22:23:27,525 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1293 ms
+[qq-system-service] 2023-05-06 22:23:27,721 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 22:23:28,449 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'interceptorConfig': Unsatisfied dependency expressed through field 'loginInterceptor'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginInterceptor': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[qq-system-service] 2023-05-06 22:23:28,451 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-05-06 22:23:28,461 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-05-06 22:23:28,610 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'redisConnectionFactory' in 'JedisConnectionConfiguration' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' in 'LettuceConnectionConfiguration' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+[qq-system-service] 2023-05-06 22:25:42,021 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 22:25:42,812 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 22:25:42,879 INFO [main][GenericScope.java:295] - BeanFactory id=bcd7864a-44d2-32cd-9139-e5f4286fac6e
+[qq-system-service] 2023-05-06 22:25:43,174 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 22:25:43,181 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 22:25:43,182 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 22:25:43,182 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 22:25:43,299 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 22:25:43,299 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1259 ms
+[qq-system-service] 2023-05-06 22:25:43,486 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 22:25:44,184 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'interceptorConfig': Unsatisfied dependency expressed through field 'loginInterceptor'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginInterceptor': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[qq-system-service] 2023-05-06 22:25:44,185 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-05-06 22:25:44,195 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-05-06 22:25:44,333 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'redisConnectionFactory' in 'JedisConnectionConfiguration' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' in 'LettuceConnectionConfiguration' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+[qq-system-service] 2023-05-06 22:32:22,029 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 22:32:22,661 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 22:32:22,713 INFO [main][GenericScope.java:295] - BeanFactory id=a831e2c2-5ada-3096-8d1c-31f404d97cab
+[qq-system-service] 2023-05-06 22:32:22,941 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 22:32:22,949 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 22:32:22,949 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 22:32:22,949 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 22:32:23,026 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 22:32:23,026 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 982 ms
+[qq-system-service] 2023-05-06 22:32:23,187 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 22:32:23,791 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'interceptorConfig': Unsatisfied dependency expressed through field 'loginInterceptor'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginInterceptor': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<?, ?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[qq-system-service] 2023-05-06 22:32:23,793 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-05-06 22:32:23,801 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-05-06 22:32:23,920 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redisTemplate in com.qiqu.web.interceptor.LoginInterceptor required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'redisTemplate' in 'RedisAutoConfiguration' not loaded because auto-configuration 'RedisAutoConfiguration' was excluded
+	- Bean method 'stringRedisTemplate' in 'RedisAutoConfiguration' not loaded because auto-configuration 'RedisAutoConfiguration' was excluded
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+[qq-system-service] 2023-05-06 22:42:30,764 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 22:42:31,517 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 22:42:31,578 INFO [main][GenericScope.java:295] - BeanFactory id=1bdb3891-25ff-35f6-8e46-72458962267f
+[qq-system-service] 2023-05-06 22:42:31,894 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 22:42:31,903 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 22:42:31,903 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 22:42:31,904 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 22:42:32,022 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 22:42:32,022 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1240 ms
+[qq-system-service] 2023-05-06 22:42:32,223 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 22:42:33,264 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 22:42:33,264 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 22:42:33,270 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 22:42:33,270 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 22:42:33,359 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 22:42:33,604 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 22:42:34,256 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-05-06 22:42:34,756 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 22:42:34,782 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 60030 (http) with context path ''
+[qq-system-service] 2023-05-06 22:42:34,794 INFO [main][NacosServiceRegistry.java:75] - nacos registry, DEFAULT_GROUP qq-content-service 192.168.136.1:60030 register finished
+[qq-system-service] 2023-05-06 22:42:35,135 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-05-06 22:42:35,151 INFO [main][StartupInfoLogger.java:61] - Started ContentApplication in 5.503 seconds (JVM running for 6.509)
+[qq-system-service] 2023-05-06 22:42:35,668 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@594d9597 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@4e671ef
+[qq-system-service] 2023-05-06 22:42:40,488 INFO [http-nio-60030-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[qq-system-service] 2023-05-06 22:42:40,488 INFO [http-nio-60030-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[qq-system-service] 2023-05-06 22:42:40,499 INFO [http-nio-60030-exec-1][FrameworkServlet.java:547] - Completed initialization in 10 ms
+[qq-system-service] 2023-05-06 22:42:47,531 INFO [http-nio-60080-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[qq-system-service] 2023-05-06 22:42:47,533 INFO [http-nio-60080-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[qq-system-service] 2023-05-06 22:42:47,569 INFO [http-nio-60080-exec-1][FrameworkServlet.java:547] - Completed initialization in 36 ms
+[qq-system-service] 2023-05-06 22:42:47,597 INFO [http-nio-60080-exec-1][LoginInterceptor.java:39] - token=null
+[qq-system-service] 2023-05-06 22:42:47,614 ERROR [http-nio-60080-exec-1][DirectJDKLog.java:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is BusinessException(errorCode=NOTTOKEN)] with root cause
+BusinessException(errorCode=NOTTOKEN)
+	at com.qiqu.web.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:44)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-05-06 22:42:47,631 INFO [http-nio-60080-exec-1][LoginInterceptor.java:39] - token=null
+[qq-system-service] 2023-05-06 22:42:47,970 INFO [http-nio-60080-exec-2][LoginInterceptor.java:39] - token=null
+[qq-system-service] 2023-05-06 22:42:47,971 ERROR [http-nio-60080-exec-2][DirectJDKLog.java:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is BusinessException(errorCode=NOTTOKEN)] with root cause
+BusinessException(errorCode=NOTTOKEN)
+	at com.qiqu.web.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:44)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:151)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-05-06 22:42:47,973 INFO [http-nio-60080-exec-2][LoginInterceptor.java:39] - token=null
+[qq-system-service] 2023-05-06 22:43:26,766 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1066] - HikariPool-1 - configuration:
+[qq-system-service] 2023-05-06 22:43:26,767 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - allowPoolSuspension.............false
+[qq-system-service] 2023-05-06 22:43:26,769 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - autoCommit......................true
+[qq-system-service] 2023-05-06 22:43:26,769 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - catalog.........................none
+[qq-system-service] 2023-05-06 22:43:26,769 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - connectionInitSql...............none
+[qq-system-service] 2023-05-06 22:43:26,769 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - connectionTestQuery.............none
+[qq-system-service] 2023-05-06 22:43:26,769 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - connectionTimeout...............30000
+[qq-system-service] 2023-05-06 22:43:26,770 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - dataSource......................none
+[qq-system-service] 2023-05-06 22:43:26,770 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - dataSourceClassName.............none
+[qq-system-service] 2023-05-06 22:43:26,770 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - dataSourceJNDI..................none
+[qq-system-service] 2023-05-06 22:43:26,770 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - dataSourceProperties............{password=<masked>}
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - driverClassName................."com.mysql.jdbc.Driver"
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - exceptionOverrideClassName......none
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - healthCheckProperties...........{}
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - healthCheckRegistry.............none
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - idleTimeout.....................600000
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - initializationFailTimeout.......1
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - isolateInternalQueries..........false
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - jdbcUrl.........................jdbc:mysql://152.32.252.204:3306/qq-content?userUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - leakDetectionThreshold..........0
+[qq-system-service] 2023-05-06 22:43:26,771 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - maxLifetime.....................1800000
+[qq-system-service] 2023-05-06 22:43:26,772 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - maximumPoolSize.................10
+[qq-system-service] 2023-05-06 22:43:26,772 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - metricRegistry..................none
+[qq-system-service] 2023-05-06 22:43:26,772 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - metricsTrackerFactory...........none
+[qq-system-service] 2023-05-06 22:43:26,772 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - minimumIdle.....................10
+[qq-system-service] 2023-05-06 22:43:26,772 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - password........................<masked>
+[qq-system-service] 2023-05-06 22:43:26,773 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - poolName........................"HikariPool-1"
+[qq-system-service] 2023-05-06 22:43:26,773 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - readOnly........................false
+[qq-system-service] 2023-05-06 22:43:26,773 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - registerMbeans..................false
+[qq-system-service] 2023-05-06 22:43:26,773 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - scheduledExecutor...............none
+[qq-system-service] 2023-05-06 22:43:26,773 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - schema..........................none
+[qq-system-service] 2023-05-06 22:43:26,773 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - threadFactory...................internal
+[qq-system-service] 2023-05-06 22:43:26,774 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - transactionIsolation............default
+[qq-system-service] 2023-05-06 22:43:26,774 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - username........................"root"
+[qq-system-service] 2023-05-06 22:43:26,774 DEBUG [http-nio-60030-exec-10][HikariConfig.java:1098] - validationTimeout...............5000
+[qq-system-service] 2023-05-06 22:43:26,774 INFO [http-nio-60030-exec-10][HikariDataSource.java:110] - HikariPool-1 - Starting...
+[qq-system-service] 2023-05-06 22:43:33,128 DEBUG [http-nio-60030-exec-10][HikariPool.java:564] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@46b20baf
+[qq-system-service] 2023-05-06 22:43:33,132 INFO [http-nio-60030-exec-10][HikariDataSource.java:123] - HikariPool-1 - Start completed.
+[qq-system-service] 2023-05-06 22:43:33,233 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+[qq-system-service] 2023-05-06 22:43:34,389 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@19f3c8bd
+[qq-system-service] 2023-05-06 22:43:34,997 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7cf5f68e
+[qq-system-service] 2023-05-06 22:43:35,633 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1fbeeef2
+[qq-system-service] 2023-05-06 22:43:36,568 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@aaaacb
+[qq-system-service] 2023-05-06 22:43:36,920 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@fa8d98
+[qq-system-service] 2023-05-06 22:43:37,757 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7dc23e83
+[qq-system-service] 2023-05-06 22:43:38,340 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5e59ccd7
+[qq-system-service] 2023-05-06 22:43:38,937 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@11d12ecb
+[qq-system-service] 2023-05-06 22:43:39,547 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@51553020
+[qq-system-service] 2023-05-06 22:43:39,547 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:44:03,236 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:44:03,236 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:44:33,241 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:44:33,241 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:45:03,243 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:45:03,243 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:45:33,245 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:45:33,245 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:45:41,905 WARN [Thread-21][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-05-06 22:45:41,905 WARN [Thread-15][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-05-06 22:45:41,906 WARN [Thread-21][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-05-06 22:45:41,908 WARN [Thread-15][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-05-06 22:45:42,059 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 22:45:42,068 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:90] - De-registering from Nacos Server now...
+[qq-system-service] 2023-05-06 22:45:42,074 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:110] - De-registration finished.
+[qq-system-service] 2023-05-06 22:45:42,585 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@1c5ebbf3 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@a97a895
+[qq-system-service] 2023-05-06 22:45:48,756 WARN [SpringContextShutdownHook][DisposableBeanAdapter.java:290] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+[qq-system-service] 2023-05-06 22:45:48,761 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 22:45:48,782 DEBUG [SpringContextShutdownHook][AbstractRedisClient.java:474] - Initiate shutdown (100, 100, MILLISECONDS)
+[qq-system-service] 2023-05-06 22:45:48,804 DEBUG [SpringContextShutdownHook][DefaultClientResources.java:631] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-05-06 22:45:48,808 DEBUG [SpringContextShutdownHook][DefaultEventLoopGroupProvider.java:263] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-05-06 22:46:03,246 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:46:03,246 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:46:33,247 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:46:33,247 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:47:03,250 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:47:03,250 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:47:33,251 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:47:33,253 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:48:03,255 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:48:03,255 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:48:33,257 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:48:33,257 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:49:03,257 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:49:03,257 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:49:33,260 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:49:33,260 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:50:03,261 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:50:03,261 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:50:33,263 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:50:33,263 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:51:03,264 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:51:03,264 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:51:33,265 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:51:33,265 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 22:51:48,170 WARN [Thread-15][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-05-06 22:51:48,170 WARN [Thread-21][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-05-06 22:51:48,170 WARN [Thread-21][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-05-06 22:51:48,177 WARN [Thread-15][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-05-06 22:51:48,405 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 22:51:48,460 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:90] - De-registering from Nacos Server now...
+[qq-system-service] 2023-05-06 22:51:48,466 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:110] - De-registration finished.
+[qq-system-service] 2023-05-06 22:51:49,048 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@64645e82 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@4e671ef
+[qq-system-service] 2023-05-06 22:51:56,417 WARN [SpringContextShutdownHook][DisposableBeanAdapter.java:290] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+[qq-system-service] 2023-05-06 22:51:56,422 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 22:51:56,433 INFO [SpringContextShutdownHook][HikariDataSource.java:350] - HikariPool-1 - Shutdown initiated...
+[qq-system-service] 2023-05-06 22:51:56,434 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 22:51:56,438 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@46b20baf: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,445 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@19f3c8bd: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,446 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7cf5f68e: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,447 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@1fbeeef2: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,448 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@aaaacb: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,448 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@fa8d98: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,448 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7dc23e83: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,449 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5e59ccd7: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,449 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@11d12ecb: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,450 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@51553020: (connection evicted)
+[qq-system-service] 2023-05-06 22:51:56,451 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[qq-system-service] 2023-05-06 22:51:56,451 INFO [SpringContextShutdownHook][HikariDataSource.java:352] - HikariPool-1 - Shutdown completed.

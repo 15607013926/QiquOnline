@@ -1,0 +1,823 @@
+[qq-system-service] 2023-05-06 23:04:09,655 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 23:04:11,676 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 23:04:11,819 INFO [main][GenericScope.java:295] - BeanFactory id=1bdb3891-25ff-35f6-8e46-72458962267f
+[qq-system-service] 2023-05-06 23:04:12,360 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 23:04:12,375 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:04:12,376 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 23:04:12,377 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 23:04:12,570 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 23:04:12,570 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 2879 ms
+[qq-system-service] 2023-05-06 23:04:12,940 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 23:04:15,098 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:04:15,099 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:04:15,113 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:04:15,113 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:04:15,318 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 23:04:15,890 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 23:04:16,713 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-05-06 23:04:17,539 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:04:17,558 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 60030 is already in use
+[qq-system-service] 2023-05-06 23:04:24,551 INFO [main][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 23:04:24,559 INFO [main][DirectJDKLog.java:173] - Pausing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:04:24,560 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-05-06 23:04:24,567 INFO [main][DirectJDKLog.java:173] - Stopping ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:04:24,567 INFO [main][DirectJDKLog.java:173] - Destroying ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:04:24,574 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-05-06 23:04:24,578 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 60030 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 60030 or configure this application to listen on another port.
+
+[qq-system-service] 2023-05-06 23:04:28,302 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 23:04:29,068 INFO [main][RepositoryConfigurationDelegate.java:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[qq-system-service] 2023-05-06 23:04:29,071 INFO [main][RepositoryConfigurationDelegate.java:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[qq-system-service] 2023-05-06 23:04:29,096 INFO [main][RepositoryConfigurationDelegate.java:187] - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+[qq-system-service] 2023-05-06 23:04:29,263 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 23:04:29,333 INFO [main][GenericScope.java:295] - BeanFactory id=85bb7abe-f538-3537-9b4e-e92d44f08a56
+[qq-system-service] 2023-05-06 23:04:29,708 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60080 (http)
+[qq-system-service] 2023-05-06 23:04:29,727 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-05-06 23:04:29,727 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 23:04:29,728 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 23:04:29,873 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 23:04:29,873 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1549 ms
+[qq-system-service] 2023-05-06 23:04:30,047 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 23:04:30,826 DEBUG [main][InternalLoggerFactory.java:63] - Using SLF4J as the default logging framework
+[qq-system-service] 2023-05-06 23:04:30,828 DEBUG [main][DefaultClientResources.java:108] - -Dio.netty.eventLoopThreads: 8
+[qq-system-service] 2023-05-06 23:04:30,832 DEBUG [main][DefaultEventLoopGroupProvider.java:196] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+[qq-system-service] 2023-05-06 23:04:30,850 DEBUG [main][InternalThreadLocalMap.java:83] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[qq-system-service] 2023-05-06 23:04:30,850 DEBUG [main][InternalThreadLocalMap.java:86] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[qq-system-service] 2023-05-06 23:04:30,855 DEBUG [main][ResourceLeakDetector.java:129] - -Dio.netty.leakDetection.level: simple
+[qq-system-service] 2023-05-06 23:04:30,855 DEBUG [main][ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.targetRecords: 4
+[qq-system-service] 2023-05-06 23:04:30,859 DEBUG [main][ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6909f6be
+[qq-system-service] 2023-05-06 23:04:30,863 DEBUG [main][PlatformDependent.java:1037] - Platform: Windows
+[qq-system-service] 2023-05-06 23:04:30,864 DEBUG [main][PlatformDependent0.java:417] - -Dio.netty.noUnsafe: false
+[qq-system-service] 2023-05-06 23:04:30,864 DEBUG [main][PlatformDependent0.java:897] - Java version: 8
+[qq-system-service] 2023-05-06 23:04:30,865 DEBUG [main][PlatformDependent0.java:130] - sun.misc.Unsafe.theUnsafe: available
+[qq-system-service] 2023-05-06 23:04:30,866 DEBUG [main][PlatformDependent0.java:154] - sun.misc.Unsafe.copyMemory: available
+[qq-system-service] 2023-05-06 23:04:30,866 DEBUG [main][PlatformDependent0.java:192] - java.nio.Buffer.address: available
+[qq-system-service] 2023-05-06 23:04:30,867 DEBUG [main][PlatformDependent0.java:257] - direct buffer constructor: available
+[qq-system-service] 2023-05-06 23:04:30,868 DEBUG [main][PlatformDependent0.java:331] - java.nio.Bits.unaligned: available, true
+[qq-system-service] 2023-05-06 23:04:30,868 DEBUG [main][PlatformDependent0.java:396] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[qq-system-service] 2023-05-06 23:04:30,868 DEBUG [main][PlatformDependent0.java:403] - java.nio.DirectByteBuffer.<init>(long, int): available
+[qq-system-service] 2023-05-06 23:04:30,868 DEBUG [main][PlatformDependent.java:1080] - sun.misc.Unsafe: available
+[qq-system-service] 2023-05-06 23:04:30,869 DEBUG [main][PlatformDependent.java:1201] - -Dio.netty.tmpdir: C:\Users\12441\AppData\Local\Temp (java.io.tmpdir)
+[qq-system-service] 2023-05-06 23:04:30,869 DEBUG [main][PlatformDependent.java:1280] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[qq-system-service] 2023-05-06 23:04:30,870 DEBUG [main][PlatformDependent.java:178] - -Dio.netty.maxDirectMemory: 3752853504 bytes
+[qq-system-service] 2023-05-06 23:04:30,870 DEBUG [main][PlatformDependent.java:185] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[qq-system-service] 2023-05-06 23:04:30,871 DEBUG [main][CleanerJava6.java:92] - java.nio.ByteBuffer.cleaner(): available
+[qq-system-service] 2023-05-06 23:04:30,872 DEBUG [main][PlatformDependent.java:205] - -Dio.netty.noPreferDirect: false
+[qq-system-service] 2023-05-06 23:04:30,873 DEBUG [main][PlatformDependent.java:941] - org.jctools-core.MpscChunkedArrayQueue: available
+[qq-system-service] 2023-05-06 23:04:30,883 DEBUG [main][Loggers.java:249] - Using Slf4j logging framework
+[qq-system-service] 2023-05-06 23:04:30,901 DEBUG [main][DefaultClientResources.java:204] - LatencyUtils/HdrUtils are not available, metrics are disabled
+[qq-system-service] 2023-05-06 23:04:30,947 DEBUG [main][PooledByteBufAllocator.java:154] - -Dio.netty.allocator.numHeapArenas: 16
+[qq-system-service] 2023-05-06 23:04:30,947 DEBUG [main][PooledByteBufAllocator.java:155] - -Dio.netty.allocator.numDirectArenas: 16
+[qq-system-service] 2023-05-06 23:04:30,948 DEBUG [main][PooledByteBufAllocator.java:157] - -Dio.netty.allocator.pageSize: 8192
+[qq-system-service] 2023-05-06 23:04:30,948 DEBUG [main][PooledByteBufAllocator.java:162] - -Dio.netty.allocator.maxOrder: 11
+[qq-system-service] 2023-05-06 23:04:30,948 DEBUG [main][PooledByteBufAllocator.java:166] - -Dio.netty.allocator.chunkSize: 16777216
+[qq-system-service] 2023-05-06 23:04:30,948 DEBUG [main][PooledByteBufAllocator.java:167] - -Dio.netty.allocator.smallCacheSize: 256
+[qq-system-service] 2023-05-06 23:04:30,948 DEBUG [main][PooledByteBufAllocator.java:168] - -Dio.netty.allocator.normalCacheSize: 64
+[qq-system-service] 2023-05-06 23:04:30,948 DEBUG [main][PooledByteBufAllocator.java:169] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[qq-system-service] 2023-05-06 23:04:30,950 DEBUG [main][PooledByteBufAllocator.java:170] - -Dio.netty.allocator.cacheTrimInterval: 8192
+[qq-system-service] 2023-05-06 23:04:30,950 DEBUG [main][PooledByteBufAllocator.java:171] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[qq-system-service] 2023-05-06 23:04:30,950 DEBUG [main][PooledByteBufAllocator.java:172] - -Dio.netty.allocator.useCacheForAllThreads: true
+[qq-system-service] 2023-05-06 23:04:30,950 DEBUG [main][PooledByteBufAllocator.java:173] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[qq-system-service] 2023-05-06 23:04:31,522 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:04:31,523 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:04:31,531 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:04:31,532 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:04:31,690 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 23:04:32,022 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 23:04:32,192 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-05-06 23:04:33,174 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-05-06 23:04:33,208 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 60080 (http) with context path ''
+[qq-system-service] 2023-05-06 23:04:33,224 INFO [main][NacosServiceRegistry.java:75] - nacos registry, DEFAULT_GROUP qq-system-service 192.168.136.1:60080 register finished
+[qq-system-service] 2023-05-06 23:04:34,053 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@1a109115 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@1584c019
+[qq-system-service] 2023-05-06 23:04:34,220 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-05-06 23:04:34,244 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-05-06 23:04:34,275 INFO [main][StartupInfoLogger.java:61] - Started SystemApplication in 8.231 seconds (JVM running for 10.137)
+[qq-system-service] 2023-05-06 23:04:59,391 WARN [Thread-25][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-05-06 23:04:59,391 WARN [Thread-19][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-05-06 23:04:59,391 WARN [Thread-25][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-05-06 23:04:59,392 WARN [Thread-19][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-05-06 23:05:04,482 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 23:05:05,358 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 23:05:05,427 INFO [main][GenericScope.java:295] - BeanFactory id=1bdb3891-25ff-35f6-8e46-72458962267f
+[qq-system-service] 2023-05-06 23:05:05,782 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 23:05:05,792 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:05:05,792 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 23:05:05,792 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 23:05:05,893 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 23:05:05,894 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1390 ms
+[qq-system-service] 2023-05-06 23:05:06,155 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 23:05:07,321 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:05:07,321 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:05:07,325 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:05:07,325 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:05:07,438 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 23:05:07,795 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 23:05:08,283 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-05-06 23:05:08,880 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:05:08,891 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 60030 is already in use
+[qq-system-service] 2023-05-06 23:05:15,897 INFO [main][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 23:05:15,906 INFO [main][DirectJDKLog.java:173] - Pausing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:05:15,906 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-05-06 23:05:15,911 INFO [main][DirectJDKLog.java:173] - Stopping ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:05:15,912 INFO [main][DirectJDKLog.java:173] - Destroying ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:05:15,918 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-05-06 23:05:15,922 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 60030 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 60030 or configure this application to listen on another port.
+
+[qq-system-service] 2023-05-06 23:05:35,945 INFO [http-nio-60080-exec-2][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[qq-system-service] 2023-05-06 23:05:35,945 INFO [http-nio-60080-exec-2][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[qq-system-service] 2023-05-06 23:05:35,965 INFO [http-nio-60080-exec-2][FrameworkServlet.java:547] - Completed initialization in 20 ms
+[qq-system-service] 2023-05-06 23:05:36,207 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1066] - HikariPool-1 - configuration:
+[qq-system-service] 2023-05-06 23:05:36,210 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - allowPoolSuspension.............false
+[qq-system-service] 2023-05-06 23:05:36,210 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - autoCommit......................true
+[qq-system-service] 2023-05-06 23:05:36,211 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - catalog.........................none
+[qq-system-service] 2023-05-06 23:05:36,211 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - connectionInitSql...............none
+[qq-system-service] 2023-05-06 23:05:36,211 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - connectionTestQuery.............none
+[qq-system-service] 2023-05-06 23:05:36,211 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - connectionTimeout...............30000
+[qq-system-service] 2023-05-06 23:05:36,211 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - dataSource......................none
+[qq-system-service] 2023-05-06 23:05:36,211 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - dataSourceClassName.............none
+[qq-system-service] 2023-05-06 23:05:36,211 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - dataSourceJNDI..................none
+[qq-system-service] 2023-05-06 23:05:36,212 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - dataSourceProperties............{password=<masked>}
+[qq-system-service] 2023-05-06 23:05:36,212 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - driverClassName................."com.mysql.jdbc.Driver"
+[qq-system-service] 2023-05-06 23:05:36,212 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - exceptionOverrideClassName......none
+[qq-system-service] 2023-05-06 23:05:36,212 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - healthCheckProperties...........{}
+[qq-system-service] 2023-05-06 23:05:36,212 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - healthCheckRegistry.............none
+[qq-system-service] 2023-05-06 23:05:36,212 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - idleTimeout.....................600000
+[qq-system-service] 2023-05-06 23:05:36,213 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - initializationFailTimeout.......1
+[qq-system-service] 2023-05-06 23:05:36,213 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - isolateInternalQueries..........false
+[qq-system-service] 2023-05-06 23:05:36,214 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - jdbcUrl.........................jdbc:mysql://152.32.252.204:3306/qq-system?userUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+[qq-system-service] 2023-05-06 23:05:36,214 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - leakDetectionThreshold..........0
+[qq-system-service] 2023-05-06 23:05:36,214 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - maxLifetime.....................1800000
+[qq-system-service] 2023-05-06 23:05:36,214 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - maximumPoolSize.................10
+[qq-system-service] 2023-05-06 23:05:36,214 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - metricRegistry..................none
+[qq-system-service] 2023-05-06 23:05:36,215 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - metricsTrackerFactory...........none
+[qq-system-service] 2023-05-06 23:05:36,215 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - minimumIdle.....................10
+[qq-system-service] 2023-05-06 23:05:36,215 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - password........................<masked>
+[qq-system-service] 2023-05-06 23:05:36,215 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - poolName........................"HikariPool-1"
+[qq-system-service] 2023-05-06 23:05:36,215 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - readOnly........................false
+[qq-system-service] 2023-05-06 23:05:36,215 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - registerMbeans..................false
+[qq-system-service] 2023-05-06 23:05:36,217 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - scheduledExecutor...............none
+[qq-system-service] 2023-05-06 23:05:36,217 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - schema..........................none
+[qq-system-service] 2023-05-06 23:05:36,217 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - threadFactory...................internal
+[qq-system-service] 2023-05-06 23:05:36,217 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - transactionIsolation............default
+[qq-system-service] 2023-05-06 23:05:36,217 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - username........................"root"
+[qq-system-service] 2023-05-06 23:05:36,217 DEBUG [http-nio-60080-exec-2][HikariConfig.java:1098] - validationTimeout...............5000
+[qq-system-service] 2023-05-06 23:05:36,217 INFO [http-nio-60080-exec-2][HikariDataSource.java:110] - HikariPool-1 - Starting...
+[qq-system-service] 2023-05-06 23:05:37,913 DEBUG [http-nio-60080-exec-2][HikariPool.java:564] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7394a6d0
+[qq-system-service] 2023-05-06 23:05:37,915 INFO [http-nio-60080-exec-2][HikariDataSource.java:123] - HikariPool-1 - Start completed.
+[qq-system-service] 2023-05-06 23:05:38,016 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+[qq-system-service] 2023-05-06 23:05:38,855 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@21f750b7
+[qq-system-service] 2023-05-06 23:05:38,865 DEBUG [http-nio-60080-exec-2][RedisClient.java:263] - Trying to get a Redis connection for: RedisURI [host='192.168.136.150', port=6379]
+[qq-system-service] 2023-05-06 23:05:38,962 DEBUG [http-nio-60080-exec-2][EpollProvider.java:70] - Starting without optional epoll library
+[qq-system-service] 2023-05-06 23:05:38,964 DEBUG [http-nio-60080-exec-2][KqueueProvider.java:72] - Starting without optional kqueue library
+[qq-system-service] 2023-05-06 23:05:38,967 DEBUG [http-nio-60080-exec-2][DefaultEventLoopGroupProvider.java:85] - Allocating executor io.netty.channel.nio.NioEventLoopGroup
+[qq-system-service] 2023-05-06 23:05:38,967 DEBUG [http-nio-60080-exec-2][DefaultEventLoopGroupProvider.java:196] - Creating executor io.netty.channel.nio.NioEventLoopGroup
+[qq-system-service] 2023-05-06 23:05:38,968 DEBUG [http-nio-60080-exec-2][MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 16
+[qq-system-service] 2023-05-06 23:05:38,971 DEBUG [http-nio-60080-exec-2][NioEventLoop.java:106] - -Dio.netty.noKeySetOptimization: false
+[qq-system-service] 2023-05-06 23:05:38,972 DEBUG [http-nio-60080-exec-2][NioEventLoop.java:107] - -Dio.netty.selectorAutoRebuildThreshold: 512
+[qq-system-service] 2023-05-06 23:05:38,978 DEBUG [http-nio-60080-exec-2][DefaultEventLoopGroupProvider.java:98] - Adding reference to io.netty.channel.nio.NioEventLoopGroup@61e5d1db, existing ref count 0
+[qq-system-service] 2023-05-06 23:05:38,991 DEBUG [http-nio-60080-exec-2][RedisClient.java:775] - Resolved SocketAddress 192.168.136.150:6379 using RedisURI [host='192.168.136.150', port=6379]
+[qq-system-service] 2023-05-06 23:05:38,991 DEBUG [http-nio-60080-exec-2][AbstractRedisClient.java:312] - Connecting to Redis at 192.168.136.150:6379
+[qq-system-service] 2023-05-06 23:05:38,998 DEBUG [http-nio-60080-exec-2][DefaultChannelId.java:79] - -Dio.netty.processId: 31292 (auto-detected)
+[qq-system-service] 2023-05-06 23:05:39,000 DEBUG [http-nio-60080-exec-2][NetUtil.java:135] - -Djava.net.preferIPv4Stack: false
+[qq-system-service] 2023-05-06 23:05:39,001 DEBUG [http-nio-60080-exec-2][NetUtil.java:136] - -Djava.net.preferIPv6Addresses: false
+[qq-system-service] 2023-05-06 23:05:39,116 DEBUG [http-nio-60080-exec-2][NetUtilInitializations.java:129] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[qq-system-service] 2023-05-06 23:05:39,117 DEBUG [http-nio-60080-exec-2][NetUtil.java:187] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[qq-system-service] 2023-05-06 23:05:39,237 DEBUG [http-nio-60080-exec-2][DefaultChannelId.java:101] - -Dio.netty.machineId: 00:50:56:ff:fe:c0:00:08 (auto-detected)
+[qq-system-service] 2023-05-06 23:05:39,263 DEBUG [http-nio-60080-exec-2][ByteBufUtil.java:87] - -Dio.netty.allocator.type: pooled
+[qq-system-service] 2023-05-06 23:05:39,263 DEBUG [http-nio-60080-exec-2][ByteBufUtil.java:96] - -Dio.netty.threadLocalDirectBufferSize: 0
+[qq-system-service] 2023-05-06 23:05:39,264 DEBUG [http-nio-60080-exec-2][ByteBufUtil.java:99] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[qq-system-service] 2023-05-06 23:05:39,283 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:102] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[qq-system-service] 2023-05-06 23:05:39,283 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:103] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[qq-system-service] 2023-05-06 23:05:39,284 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:104] - -Dio.netty.recycler.linkCapacity: 16
+[qq-system-service] 2023-05-06 23:05:39,284 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:105] - -Dio.netty.recycler.ratio: 8
+[qq-system-service] 2023-05-06 23:05:39,284 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:106] - -Dio.netty.recycler.delayedQueue.ratio: 8
+[qq-system-service] 2023-05-06 23:05:39,292 DEBUG [lettuce-nioEventLoop-4-1][AbstractByteBuf.java:63] - -Dio.netty.buffer.checkAccessible: true
+[qq-system-service] 2023-05-06 23:05:39,292 DEBUG [lettuce-nioEventLoop-4-1][AbstractByteBuf.java:64] - -Dio.netty.buffer.checkBounds: true
+[qq-system-service] 2023-05-06 23:05:39,292 DEBUG [lettuce-nioEventLoop-4-1][ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@36262f41
+[qq-system-service] 2023-05-06 23:05:39,318 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:181] - [channel=0xe3522738, [id: 0x15ef39f3] (inactive), chid=0x1] channelRegistered()
+[qq-system-service] 2023-05-06 23:05:39,323 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:294] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] channelActive()
+[qq-system-service] 2023-05-06 23:05:39,324 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:421] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] activateEndpointAndExecuteBufferedCommands 0 command(s) buffered
+[qq-system-service] 2023-05-06 23:05:39,324 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:426] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] activating endpoint
+[qq-system-service] 2023-05-06 23:05:39,324 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:508] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] flushCommands()
+[qq-system-service] 2023-05-06 23:05:39,325 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:523] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] flushCommands() Flushing 0 commands
+[qq-system-service] 2023-05-06 23:05:39,325 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:180] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, last known addr=/192.168.136.150:6379] channelActive()
+[qq-system-service] 2023-05-06 23:05:39,325 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:308] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] channelActive() done
+[qq-system-service] 2023-05-06 23:05:39,326 DEBUG [lettuce-nioEventLoop-4-1][AbstractRedisClient.java:359] - Connecting to Redis at 192.168.136.150:6379: Success
+[qq-system-service] 2023-05-06 23:05:39,328 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:148] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, last known addr=/192.168.136.150:6379] userEventTriggered(ctx, io.lettuce.core.ConnectionEvents$Activated@17008a80)
+[qq-system-service] 2023-05-06 23:05:39,331 DEBUG [http-nio-60080-exec-2][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:05:39,334 DEBUG [http-nio-60080-exec-2][DefaultEndpoint.java:389] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:05:39,336 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:374] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-05-06 23:05:39,337 DEBUG [http-nio-60080-exec-2][DefaultEndpoint.java:173] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] write() done
+[qq-system-service] 2023-05-06 23:05:39,340 DEBUG [lettuce-nioEventLoop-4-1][CommandEncoder.java:101] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:05:39,346 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:570] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-05-06 23:05:39,346 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:616] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] Stack contains: 1 commands
+[qq-system-service] 2023-05-06 23:05:39,346 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:05:39,350 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-05-06 23:05:39,745 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@41d8aff8
+[qq-system-service] 2023-05-06 23:05:40,353 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@45969299
+[qq-system-service] 2023-05-06 23:05:42,739 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@168b63de
+[qq-system-service] 2023-05-06 23:05:43,079 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3ff14e18
+[qq-system-service] 2023-05-06 23:05:43,714 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@364a61a1
+[qq-system-service] 2023-05-06 23:05:44,318 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@36905f33
+[qq-system-service] 2023-05-06 23:05:45,402 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@73e50921
+[qq-system-service] 2023-05-06 23:05:46,038 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@266ed894
+[qq-system-service] 2023-05-06 23:05:46,038 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:06:08,018 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:06:08,018 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:06:38,021 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:06:38,022 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:07:08,036 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:07:08,041 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:07:38,044 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:07:38,044 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:08:03,667 DEBUG [http-nio-60080-exec-3][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:08:03,667 DEBUG [http-nio-60080-exec-3][DefaultEndpoint.java:389] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:08:03,668 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:374] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-05-06 23:08:03,668 DEBUG [http-nio-60080-exec-3][DefaultEndpoint.java:173] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] write() done
+[qq-system-service] 2023-05-06 23:08:03,669 DEBUG [lettuce-nioEventLoop-4-1][CommandEncoder.java:101] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:08:03,671 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:570] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-05-06 23:08:03,671 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:616] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] Stack contains: 1 commands
+[qq-system-service] 2023-05-06 23:08:03,671 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:08:03,671 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-05-06 23:08:08,046 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:08:08,046 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:08:38,048 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:08:38,048 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:09:08,049 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:09:08,049 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:09:38,052 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:09:38,052 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:10:08,054 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:10:08,054 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:10:38,056 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:10:38,056 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:10:58,215 DEBUG [http-nio-60080-exec-5][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:10:58,219 DEBUG [http-nio-60080-exec-5][DefaultEndpoint.java:389] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:10:58,222 DEBUG [http-nio-60080-exec-5][DefaultEndpoint.java:173] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] write() done
+[qq-system-service] 2023-05-06 23:10:58,224 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:374] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-05-06 23:10:58,228 DEBUG [lettuce-nioEventLoop-4-1][CommandEncoder.java:101] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:10:58,229 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:570] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-05-06 23:10:58,230 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:616] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] Stack contains: 1 commands
+[qq-system-service] 2023-05-06 23:10:58,230 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:10:58,231 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-05-06 23:11:08,057 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:11:08,057 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:11:38,059 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:11:38,059 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:12:08,060 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:12:08,060 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:12:38,061 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:12:38,061 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:13:08,062 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:13:08,062 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:13:38,068 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:13:38,081 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:14:08,083 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:14:08,083 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:14:38,084 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:14:38,084 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:15:08,086 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:15:08,086 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:15:38,087 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:15:38,088 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:16:08,089 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:16:08,089 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:16:38,089 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:16:38,089 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:17:08,093 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:17:08,093 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:17:38,094 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:17:38,094 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:18:08,101 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:18:08,101 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:18:38,103 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:18:38,103 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:19:08,106 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:19:08,106 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:19:38,107 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:19:38,107 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:20:08,107 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:20:08,107 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:20:38,109 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:20:38,109 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:21:08,112 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:21:08,112 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:21:38,114 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:21:38,114 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:22:08,115 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:22:08,115 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:22:38,115 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:22:38,115 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:23:08,117 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:23:08,117 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:23:38,118 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:23:38,118 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:24:08,120 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:24:08,120 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:24:38,122 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:24:38,122 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:25:08,123 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:25:08,123 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:25:38,125 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:25:38,125 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:26:08,125 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:26:08,125 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:26:38,127 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:26:38,127 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:27:08,129 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:27:08,129 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:27:38,130 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:27:38,130 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:28:08,132 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:28:08,132 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:28:38,134 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:28:38,134 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:29:08,136 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:29:08,136 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:29:38,138 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:29:38,138 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:30:08,141 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:30:08,141 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:30:38,141 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:30:38,141 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:31:08,144 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:31:08,144 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:31:38,145 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:31:38,145 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:32:08,146 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:32:08,146 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:32:38,147 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:32:38,147 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:33:08,149 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:33:08,149 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:33:38,149 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:33:38,149 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:34:08,150 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:34:08,150 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:34:38,150 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:34:38,150 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:35:01,311 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@21f750b7: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:01,687 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@16ec9ee0
+[qq-system-service] 2023-05-06 23:35:05,206 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@36905f33: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:06,591 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@76c361af
+[qq-system-service] 2023-05-06 23:35:08,152 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:35:08,152 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:35:18,302 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@266ed894: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:18,656 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4e04cea1
+[qq-system-service] 2023-05-06 23:35:19,666 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@73e50921: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:20,513 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2e2b31ee
+[qq-system-service] 2023-05-06 23:35:22,737 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@41d8aff8: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:25,611 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2a656b64
+[qq-system-service] 2023-05-06 23:35:27,004 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@45969299: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:27,357 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@734fe261
+[qq-system-service] 2023-05-06 23:35:32,361 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@168b63de: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:32,698 DEBUG [HikariPool-1 housekeeper][HikariPool.java:342] - HikariPool-1 - Add connection elided, waiting 0, queue 1
+[qq-system-service] 2023-05-06 23:35:32,699 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@364a61a1: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:33,209 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@27f32a3f
+[qq-system-service] 2023-05-06 23:35:33,560 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@47dcd570
+[qq-system-service] 2023-05-06 23:35:33,560 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:35:34,200 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3ff14e18: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:35,808 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4392ee15
+[qq-system-service] 2023-05-06 23:35:36,517 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7394a6d0: (connection has passed maxLifetime)
+[qq-system-service] 2023-05-06 23:35:37,638 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@f331f95
+[qq-system-service] 2023-05-06 23:35:38,153 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:35:38,153 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:36:08,155 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:36:08,155 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:36:12,046 WARN [Thread-17][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-05-06 23:36:12,046 WARN [Thread-23][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-05-06 23:36:12,046 WARN [Thread-23][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-05-06 23:36:12,049 WARN [Thread-17][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-05-06 23:36:12,286 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 23:36:12,303 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:90] - De-registering from Nacos Server now...
+[qq-system-service] 2023-05-06 23:36:12,305 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:110] - De-registration finished.
+[qq-system-service] 2023-05-06 23:36:12,813 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@686cda77 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@1584c019
+[qq-system-service] 2023-05-06 23:36:18,129 WARN [SpringContextShutdownHook][DisposableBeanAdapter.java:290] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+[qq-system-service] 2023-05-06 23:36:18,136 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 23:36:18,162 DEBUG [SpringContextShutdownHook][RedisChannelHandler.java:145] - closeAsync()
+[qq-system-service] 2023-05-06 23:36:18,162 DEBUG [SpringContextShutdownHook][DefaultEndpoint.java:549] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] closeAsync()
+[qq-system-service] 2023-05-06 23:36:18,177 DEBUG [SpringContextShutdownHook][AbstractRedisClient.java:474] - Initiate shutdown (100, 100, MILLISECONDS)
+[qq-system-service] 2023-05-06 23:36:18,179 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:332] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] channelInactive()
+[qq-system-service] 2023-05-06 23:36:18,180 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:463] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, epid=0x1] deactivating endpoint handler
+[qq-system-service] 2023-05-06 23:36:18,182 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:358] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] channelInactive() done
+[qq-system-service] 2023-05-06 23:36:18,182 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:188] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, last known addr=/192.168.136.150:6379] channelInactive()
+[qq-system-service] 2023-05-06 23:36:18,182 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:199] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, last known addr=/192.168.136.150:6379] Reconnect scheduling disabled
+[qq-system-service] 2023-05-06 23:36:18,183 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:198] - [channel=0xe3522738, /192.168.136.1:5634 -> /192.168.136.150:6379, chid=0x1] channelUnregistered()
+[qq-system-service] 2023-05-06 23:36:18,186 DEBUG [SpringContextShutdownHook][DefaultEventLoopGroupProvider.java:226] - Release executor io.netty.channel.nio.NioEventLoopGroup@61e5d1db
+[qq-system-service] 2023-05-06 23:36:18,289 DEBUG [lettuce-nioEventLoop-4-1][PoolThreadCache.java:224] - Freed 6 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-1
+[qq-system-service] 2023-05-06 23:36:18,391 DEBUG [SpringContextShutdownHook][DefaultClientResources.java:631] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-05-06 23:36:18,395 DEBUG [SpringContextShutdownHook][DefaultEventLoopGroupProvider.java:263] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-05-06 23:36:18,400 INFO [SpringContextShutdownHook][HikariDataSource.java:350] - HikariPool-1 - Shutdown initiated...
+[qq-system-service] 2023-05-06 23:36:18,401 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:36:18,402 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@16ec9ee0: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,403 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@76c361af: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,404 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4e04cea1: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,405 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@2e2b31ee: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,405 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@2a656b64: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,406 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@734fe261: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,406 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@27f32a3f: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,406 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@47dcd570: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,406 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4392ee15: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,406 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@f331f95: (connection evicted)
+[qq-system-service] 2023-05-06 23:36:18,406 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[qq-system-service] 2023-05-06 23:36:18,406 INFO [SpringContextShutdownHook][HikariDataSource.java:352] - HikariPool-1 - Shutdown completed.
+[qq-system-service] 2023-05-06 23:36:23,487 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 23:36:24,290 INFO [main][RepositoryConfigurationDelegate.java:249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[qq-system-service] 2023-05-06 23:36:24,293 INFO [main][RepositoryConfigurationDelegate.java:127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[qq-system-service] 2023-05-06 23:36:24,314 INFO [main][RepositoryConfigurationDelegate.java:187] - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+[qq-system-service] 2023-05-06 23:36:24,452 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 23:36:24,524 INFO [main][GenericScope.java:295] - BeanFactory id=85bb7abe-f538-3537-9b4e-e92d44f08a56
+[qq-system-service] 2023-05-06 23:36:24,914 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60080 (http)
+[qq-system-service] 2023-05-06 23:36:24,924 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-05-06 23:36:24,925 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 23:36:24,925 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 23:36:25,031 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 23:36:25,032 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1492 ms
+[qq-system-service] 2023-05-06 23:36:25,217 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 23:36:25,837 DEBUG [main][InternalLoggerFactory.java:63] - Using SLF4J as the default logging framework
+[qq-system-service] 2023-05-06 23:36:25,839 DEBUG [main][DefaultClientResources.java:108] - -Dio.netty.eventLoopThreads: 8
+[qq-system-service] 2023-05-06 23:36:25,846 DEBUG [main][DefaultEventLoopGroupProvider.java:196] - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+[qq-system-service] 2023-05-06 23:36:25,861 DEBUG [main][InternalThreadLocalMap.java:83] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[qq-system-service] 2023-05-06 23:36:25,862 DEBUG [main][InternalThreadLocalMap.java:86] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[qq-system-service] 2023-05-06 23:36:25,865 DEBUG [main][ResourceLeakDetector.java:129] - -Dio.netty.leakDetection.level: simple
+[qq-system-service] 2023-05-06 23:36:25,866 DEBUG [main][ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.targetRecords: 4
+[qq-system-service] 2023-05-06 23:36:25,869 DEBUG [main][ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@52d9d817
+[qq-system-service] 2023-05-06 23:36:25,871 DEBUG [main][PlatformDependent.java:1037] - Platform: Windows
+[qq-system-service] 2023-05-06 23:36:25,872 DEBUG [main][PlatformDependent0.java:417] - -Dio.netty.noUnsafe: false
+[qq-system-service] 2023-05-06 23:36:25,872 DEBUG [main][PlatformDependent0.java:897] - Java version: 8
+[qq-system-service] 2023-05-06 23:36:25,873 DEBUG [main][PlatformDependent0.java:130] - sun.misc.Unsafe.theUnsafe: available
+[qq-system-service] 2023-05-06 23:36:25,874 DEBUG [main][PlatformDependent0.java:154] - sun.misc.Unsafe.copyMemory: available
+[qq-system-service] 2023-05-06 23:36:25,874 DEBUG [main][PlatformDependent0.java:192] - java.nio.Buffer.address: available
+[qq-system-service] 2023-05-06 23:36:25,875 DEBUG [main][PlatformDependent0.java:257] - direct buffer constructor: available
+[qq-system-service] 2023-05-06 23:36:25,875 DEBUG [main][PlatformDependent0.java:331] - java.nio.Bits.unaligned: available, true
+[qq-system-service] 2023-05-06 23:36:25,876 DEBUG [main][PlatformDependent0.java:396] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[qq-system-service] 2023-05-06 23:36:25,876 DEBUG [main][PlatformDependent0.java:403] - java.nio.DirectByteBuffer.<init>(long, int): available
+[qq-system-service] 2023-05-06 23:36:25,876 DEBUG [main][PlatformDependent.java:1080] - sun.misc.Unsafe: available
+[qq-system-service] 2023-05-06 23:36:25,877 DEBUG [main][PlatformDependent.java:1201] - -Dio.netty.tmpdir: C:\Users\12441\AppData\Local\Temp (java.io.tmpdir)
+[qq-system-service] 2023-05-06 23:36:25,877 DEBUG [main][PlatformDependent.java:1280] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[qq-system-service] 2023-05-06 23:36:25,878 DEBUG [main][PlatformDependent.java:178] - -Dio.netty.maxDirectMemory: 3752853504 bytes
+[qq-system-service] 2023-05-06 23:36:25,879 DEBUG [main][PlatformDependent.java:185] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[qq-system-service] 2023-05-06 23:36:25,880 DEBUG [main][CleanerJava6.java:92] - java.nio.ByteBuffer.cleaner(): available
+[qq-system-service] 2023-05-06 23:36:25,880 DEBUG [main][PlatformDependent.java:205] - -Dio.netty.noPreferDirect: false
+[qq-system-service] 2023-05-06 23:36:25,881 DEBUG [main][PlatformDependent.java:941] - org.jctools-core.MpscChunkedArrayQueue: available
+[qq-system-service] 2023-05-06 23:36:25,891 DEBUG [main][Loggers.java:249] - Using Slf4j logging framework
+[qq-system-service] 2023-05-06 23:36:25,917 DEBUG [main][DefaultClientResources.java:204] - LatencyUtils/HdrUtils are not available, metrics are disabled
+[qq-system-service] 2023-05-06 23:36:25,958 DEBUG [main][PooledByteBufAllocator.java:154] - -Dio.netty.allocator.numHeapArenas: 16
+[qq-system-service] 2023-05-06 23:36:25,959 DEBUG [main][PooledByteBufAllocator.java:155] - -Dio.netty.allocator.numDirectArenas: 16
+[qq-system-service] 2023-05-06 23:36:25,959 DEBUG [main][PooledByteBufAllocator.java:157] - -Dio.netty.allocator.pageSize: 8192
+[qq-system-service] 2023-05-06 23:36:25,959 DEBUG [main][PooledByteBufAllocator.java:162] - -Dio.netty.allocator.maxOrder: 11
+[qq-system-service] 2023-05-06 23:36:25,959 DEBUG [main][PooledByteBufAllocator.java:166] - -Dio.netty.allocator.chunkSize: 16777216
+[qq-system-service] 2023-05-06 23:36:25,959 DEBUG [main][PooledByteBufAllocator.java:167] - -Dio.netty.allocator.smallCacheSize: 256
+[qq-system-service] 2023-05-06 23:36:25,960 DEBUG [main][PooledByteBufAllocator.java:168] - -Dio.netty.allocator.normalCacheSize: 64
+[qq-system-service] 2023-05-06 23:36:25,960 DEBUG [main][PooledByteBufAllocator.java:169] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[qq-system-service] 2023-05-06 23:36:25,960 DEBUG [main][PooledByteBufAllocator.java:170] - -Dio.netty.allocator.cacheTrimInterval: 8192
+[qq-system-service] 2023-05-06 23:36:25,960 DEBUG [main][PooledByteBufAllocator.java:171] - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[qq-system-service] 2023-05-06 23:36:25,960 DEBUG [main][PooledByteBufAllocator.java:172] - -Dio.netty.allocator.useCacheForAllThreads: true
+[qq-system-service] 2023-05-06 23:36:25,960 DEBUG [main][PooledByteBufAllocator.java:173] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[qq-system-service] 2023-05-06 23:36:26,392 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:36:26,392 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:36:26,395 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:36:26,395 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:36:26,475 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 23:36:26,803 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 23:36:26,968 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-05-06 23:36:27,478 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60080"]
+[qq-system-service] 2023-05-06 23:36:27,507 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 60080 (http) with context path ''
+[qq-system-service] 2023-05-06 23:36:27,518 INFO [main][NacosServiceRegistry.java:75] - nacos registry, DEFAULT_GROUP qq-system-service 192.168.136.1:60080 register finished
+[qq-system-service] 2023-05-06 23:36:27,845 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-05-06 23:36:27,852 DEBUG [main][NoopValidator.java:24] - ERROR [ModelSpecification.spec] At least one type of specification is required
+[qq-system-service] 2023-05-06 23:36:27,868 INFO [main][StartupInfoLogger.java:61] - Started SystemApplication in 5.519 seconds (JVM running for 6.652)
+[qq-system-service] 2023-05-06 23:36:28,381 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@1803d24e will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@6c851821
+[qq-system-service] 2023-05-06 23:37:10,085 INFO [http-nio-60080-exec-1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[qq-system-service] 2023-05-06 23:37:10,085 INFO [http-nio-60080-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[qq-system-service] 2023-05-06 23:37:10,094 INFO [http-nio-60080-exec-1][FrameworkServlet.java:547] - Completed initialization in 9 ms
+[qq-system-service] 2023-05-06 23:37:10,302 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1066] - HikariPool-1 - configuration:
+[qq-system-service] 2023-05-06 23:37:10,304 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - allowPoolSuspension.............false
+[qq-system-service] 2023-05-06 23:37:10,304 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - autoCommit......................true
+[qq-system-service] 2023-05-06 23:37:10,304 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - catalog.........................none
+[qq-system-service] 2023-05-06 23:37:10,305 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - connectionInitSql...............none
+[qq-system-service] 2023-05-06 23:37:10,305 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - connectionTestQuery.............none
+[qq-system-service] 2023-05-06 23:37:10,305 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - connectionTimeout...............30000
+[qq-system-service] 2023-05-06 23:37:10,305 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - dataSource......................none
+[qq-system-service] 2023-05-06 23:37:10,305 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - dataSourceClassName.............none
+[qq-system-service] 2023-05-06 23:37:10,305 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - dataSourceJNDI..................none
+[qq-system-service] 2023-05-06 23:37:10,307 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - dataSourceProperties............{password=<masked>}
+[qq-system-service] 2023-05-06 23:37:10,307 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - driverClassName................."com.mysql.jdbc.Driver"
+[qq-system-service] 2023-05-06 23:37:10,307 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - exceptionOverrideClassName......none
+[qq-system-service] 2023-05-06 23:37:10,307 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - healthCheckProperties...........{}
+[qq-system-service] 2023-05-06 23:37:10,308 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - healthCheckRegistry.............none
+[qq-system-service] 2023-05-06 23:37:10,308 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - idleTimeout.....................600000
+[qq-system-service] 2023-05-06 23:37:10,308 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - initializationFailTimeout.......1
+[qq-system-service] 2023-05-06 23:37:10,308 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - isolateInternalQueries..........false
+[qq-system-service] 2023-05-06 23:37:10,308 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - jdbcUrl.........................jdbc:mysql://152.32.252.204:3306/qq-system?userUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+[qq-system-service] 2023-05-06 23:37:10,309 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - leakDetectionThreshold..........0
+[qq-system-service] 2023-05-06 23:37:10,309 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - maxLifetime.....................1800000
+[qq-system-service] 2023-05-06 23:37:10,309 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - maximumPoolSize.................10
+[qq-system-service] 2023-05-06 23:37:10,309 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - metricRegistry..................none
+[qq-system-service] 2023-05-06 23:37:10,310 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - metricsTrackerFactory...........none
+[qq-system-service] 2023-05-06 23:37:10,310 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - minimumIdle.....................10
+[qq-system-service] 2023-05-06 23:37:10,310 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - password........................<masked>
+[qq-system-service] 2023-05-06 23:37:10,310 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - poolName........................"HikariPool-1"
+[qq-system-service] 2023-05-06 23:37:10,310 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - readOnly........................false
+[qq-system-service] 2023-05-06 23:37:10,311 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - registerMbeans..................false
+[qq-system-service] 2023-05-06 23:37:10,311 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - scheduledExecutor...............none
+[qq-system-service] 2023-05-06 23:37:10,311 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - schema..........................none
+[qq-system-service] 2023-05-06 23:37:10,311 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - threadFactory...................internal
+[qq-system-service] 2023-05-06 23:37:10,311 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - transactionIsolation............default
+[qq-system-service] 2023-05-06 23:37:10,311 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - username........................"root"
+[qq-system-service] 2023-05-06 23:37:10,312 DEBUG [http-nio-60080-exec-1][HikariConfig.java:1098] - validationTimeout...............5000
+[qq-system-service] 2023-05-06 23:37:10,312 INFO [http-nio-60080-exec-1][HikariDataSource.java:110] - HikariPool-1 - Starting...
+[qq-system-service] 2023-05-06 23:37:16,508 DEBUG [http-nio-60080-exec-1][HikariPool.java:564] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@16d0e002
+[qq-system-service] 2023-05-06 23:37:16,511 INFO [http-nio-60080-exec-1][HikariDataSource.java:123] - HikariPool-1 - Start completed.
+[qq-system-service] 2023-05-06 23:37:16,612 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[qq-system-service] 2023-05-06 23:37:17,148 DEBUG [http-nio-60080-exec-1][RedisClient.java:263] - Trying to get a Redis connection for: RedisURI [host='192.168.136.150', port=6379]
+[qq-system-service] 2023-05-06 23:37:17,245 DEBUG [http-nio-60080-exec-1][EpollProvider.java:70] - Starting without optional epoll library
+[qq-system-service] 2023-05-06 23:37:17,246 DEBUG [http-nio-60080-exec-1][KqueueProvider.java:72] - Starting without optional kqueue library
+[qq-system-service] 2023-05-06 23:37:17,248 DEBUG [http-nio-60080-exec-1][DefaultEventLoopGroupProvider.java:85] - Allocating executor io.netty.channel.nio.NioEventLoopGroup
+[qq-system-service] 2023-05-06 23:37:17,248 DEBUG [http-nio-60080-exec-1][DefaultEventLoopGroupProvider.java:196] - Creating executor io.netty.channel.nio.NioEventLoopGroup
+[qq-system-service] 2023-05-06 23:37:17,249 DEBUG [http-nio-60080-exec-1][MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 16
+[qq-system-service] 2023-05-06 23:37:17,254 DEBUG [http-nio-60080-exec-1][NioEventLoop.java:106] - -Dio.netty.noKeySetOptimization: false
+[qq-system-service] 2023-05-06 23:37:17,254 DEBUG [http-nio-60080-exec-1][NioEventLoop.java:107] - -Dio.netty.selectorAutoRebuildThreshold: 512
+[qq-system-service] 2023-05-06 23:37:17,261 DEBUG [http-nio-60080-exec-1][DefaultEventLoopGroupProvider.java:98] - Adding reference to io.netty.channel.nio.NioEventLoopGroup@6c85e41a, existing ref count 0
+[qq-system-service] 2023-05-06 23:37:17,275 DEBUG [http-nio-60080-exec-1][RedisClient.java:775] - Resolved SocketAddress 192.168.136.150:6379 using RedisURI [host='192.168.136.150', port=6379]
+[qq-system-service] 2023-05-06 23:37:17,275 DEBUG [http-nio-60080-exec-1][AbstractRedisClient.java:312] - Connecting to Redis at 192.168.136.150:6379
+[qq-system-service] 2023-05-06 23:37:17,284 DEBUG [http-nio-60080-exec-1][DefaultChannelId.java:79] - -Dio.netty.processId: 33056 (auto-detected)
+[qq-system-service] 2023-05-06 23:37:17,286 DEBUG [http-nio-60080-exec-1][NetUtil.java:135] - -Djava.net.preferIPv4Stack: false
+[qq-system-service] 2023-05-06 23:37:17,287 DEBUG [http-nio-60080-exec-1][NetUtil.java:136] - -Djava.net.preferIPv6Addresses: false
+[qq-system-service] 2023-05-06 23:37:17,395 DEBUG [http-nio-60080-exec-1][NetUtilInitializations.java:129] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[qq-system-service] 2023-05-06 23:37:17,396 DEBUG [http-nio-60080-exec-1][NetUtil.java:187] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[qq-system-service] 2023-05-06 23:37:17,451 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@40d0e924
+[qq-system-service] 2023-05-06 23:37:17,518 DEBUG [http-nio-60080-exec-1][DefaultChannelId.java:101] - -Dio.netty.machineId: 00:50:56:ff:fe:c0:00:08 (auto-detected)
+[qq-system-service] 2023-05-06 23:37:17,541 DEBUG [http-nio-60080-exec-1][ByteBufUtil.java:87] - -Dio.netty.allocator.type: pooled
+[qq-system-service] 2023-05-06 23:37:17,541 DEBUG [http-nio-60080-exec-1][ByteBufUtil.java:96] - -Dio.netty.threadLocalDirectBufferSize: 0
+[qq-system-service] 2023-05-06 23:37:17,541 DEBUG [http-nio-60080-exec-1][ByteBufUtil.java:99] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[qq-system-service] 2023-05-06 23:37:17,559 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:102] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[qq-system-service] 2023-05-06 23:37:17,559 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:103] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[qq-system-service] 2023-05-06 23:37:17,560 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:104] - -Dio.netty.recycler.linkCapacity: 16
+[qq-system-service] 2023-05-06 23:37:17,560 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:105] - -Dio.netty.recycler.ratio: 8
+[qq-system-service] 2023-05-06 23:37:17,560 DEBUG [lettuce-nioEventLoop-4-1][Recycler.java:106] - -Dio.netty.recycler.delayedQueue.ratio: 8
+[qq-system-service] 2023-05-06 23:37:17,567 DEBUG [lettuce-nioEventLoop-4-1][AbstractByteBuf.java:63] - -Dio.netty.buffer.checkAccessible: true
+[qq-system-service] 2023-05-06 23:37:17,567 DEBUG [lettuce-nioEventLoop-4-1][AbstractByteBuf.java:64] - -Dio.netty.buffer.checkBounds: true
+[qq-system-service] 2023-05-06 23:37:17,567 DEBUG [lettuce-nioEventLoop-4-1][ResourceLeakDetectorFactory.java:196] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2e290377
+[qq-system-service] 2023-05-06 23:37:17,590 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:181] - [channel=0x229b48d0, [id: 0x7f21ed9d] (inactive), chid=0x1] channelRegistered()
+[qq-system-service] 2023-05-06 23:37:17,595 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:294] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] channelActive()
+[qq-system-service] 2023-05-06 23:37:17,595 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:421] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] activateEndpointAndExecuteBufferedCommands 0 command(s) buffered
+[qq-system-service] 2023-05-06 23:37:17,595 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:426] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] activating endpoint
+[qq-system-service] 2023-05-06 23:37:17,595 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:508] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] flushCommands()
+[qq-system-service] 2023-05-06 23:37:17,596 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:523] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] flushCommands() Flushing 0 commands
+[qq-system-service] 2023-05-06 23:37:17,596 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:180] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, last known addr=/192.168.136.150:6379] channelActive()
+[qq-system-service] 2023-05-06 23:37:17,596 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:308] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] channelActive() done
+[qq-system-service] 2023-05-06 23:37:17,597 DEBUG [lettuce-nioEventLoop-4-1][AbstractRedisClient.java:359] - Connecting to Redis at 192.168.136.150:6379: Success
+[qq-system-service] 2023-05-06 23:37:17,599 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:148] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, last known addr=/192.168.136.150:6379] userEventTriggered(ctx, io.lettuce.core.ConnectionEvents$Activated@54e59969)
+[qq-system-service] 2023-05-06 23:37:17,603 DEBUG [http-nio-60080-exec-1][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:37:17,605 DEBUG [http-nio-60080-exec-1][DefaultEndpoint.java:389] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:37:17,606 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:374] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-05-06 23:37:17,607 DEBUG [http-nio-60080-exec-1][DefaultEndpoint.java:173] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] write() done
+[qq-system-service] 2023-05-06 23:37:17,610 DEBUG [lettuce-nioEventLoop-4-1][CommandEncoder.java:101] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:37:17,616 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:570] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-05-06 23:37:17,616 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:616] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] Stack contains: 1 commands
+[qq-system-service] 2023-05-06 23:37:17,616 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:37:17,621 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-05-06 23:37:19,077 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@66256d7d
+[qq-system-service] 2023-05-06 23:37:19,429 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@20aebe48
+[qq-system-service] 2023-05-06 23:37:19,793 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@73739a25
+[qq-system-service] 2023-05-06 23:37:40,814 DEBUG [HikariPool-1 connection adder][PoolBase.java:372] - HikariPool-1 - Failed to create/setup connection: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[qq-system-service] 2023-05-06 23:37:40,815 DEBUG [HikariPool-1 connection adder][HikariPool.java:503] - HikariPool-1 - Cannot acquire connection from data source
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:725)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:711)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 24 more
+[qq-system-service] 2023-05-06 23:37:41,733 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7854e1f2
+[qq-system-service] 2023-05-06 23:37:42,562 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@27fbd808
+[qq-system-service] 2023-05-06 23:37:42,909 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@10a525c7
+[qq-system-service] 2023-05-06 23:37:43,275 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5c2ea701
+[qq-system-service] 2023-05-06 23:37:44,854 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2b43bcf7
+[qq-system-service] 2023-05-06 23:37:44,854 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:37:46,613 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:37:46,613 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:38:16,614 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:38:16,614 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:38:46,622 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:38:46,622 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:39:16,625 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:39:16,625 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:39:46,627 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:39:46,627 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:40:16,627 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:40:16,627 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:40:46,633 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:40:46,634 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:41:16,636 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:41:16,636 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:41:46,637 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:41:46,637 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:42:16,640 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:42:16,644 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:42:25,897 DEBUG [http-nio-60080-exec-5][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:42:25,904 DEBUG [http-nio-60080-exec-5][DefaultEndpoint.java:389] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:42:25,911 DEBUG [http-nio-60080-exec-5][DefaultEndpoint.java:173] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] write() done
+[qq-system-service] 2023-05-06 23:42:25,916 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:374] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-05-06 23:42:25,928 DEBUG [lettuce-nioEventLoop-4-1][CommandEncoder.java:101] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:42:25,931 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:570] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-05-06 23:42:25,931 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:616] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] Stack contains: 1 commands
+[qq-system-service] 2023-05-06 23:42:25,931 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:42:25,932 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-05-06 23:42:46,647 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:42:46,648 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:43:16,649 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:43:16,649 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:43:46,651 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:43:46,651 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:44:16,652 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:44:16,652 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:44:46,653 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:44:46,653 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:45:16,655 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:45:16,655 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:45:46,656 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:45:46,656 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:46:16,657 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:46:16,657 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:46:46,657 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:46:46,657 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:47:16,660 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:47:16,662 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:47:19,291 DEBUG [http-nio-60080-exec-9][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:47:19,293 DEBUG [http-nio-60080-exec-9][DefaultEndpoint.java:389] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:47:19,293 DEBUG [http-nio-60080-exec-9][DefaultEndpoint.java:173] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] write() done
+[qq-system-service] 2023-05-06 23:47:19,293 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:374] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-05-06 23:47:19,294 DEBUG [lettuce-nioEventLoop-4-1][CommandEncoder.java:101] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:47:19,295 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:570] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-05-06 23:47:19,295 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:616] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] Stack contains: 1 commands
+[qq-system-service] 2023-05-06 23:47:19,295 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:47:19,295 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-05-06 23:47:44,723 DEBUG [http-nio-60080-exec-1][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:47:44,723 DEBUG [http-nio-60080-exec-1][DefaultEndpoint.java:389] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:47:44,725 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:374] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-05-06 23:47:44,725 DEBUG [lettuce-nioEventLoop-4-1][CommandEncoder.java:101] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:47:44,725 DEBUG [http-nio-60080-exec-1][DefaultEndpoint.java:173] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, epid=0x1] write() done
+[qq-system-service] 2023-05-06 23:47:44,727 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:570] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-05-06 23:47:44,727 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:616] - [channel=0x229b48d0, /192.168.136.1:8434 -> /192.168.136.150:6379, chid=0x1] Stack contains: 1 commands
+[qq-system-service] 2023-05-06 23:47:44,727 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-05-06 23:47:44,727 DEBUG [lettuce-nioEventLoop-4-1][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-05-06 23:47:46,664 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:47:46,664 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:48:16,666 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:48:16,666 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:48:46,668 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:48:46,668 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:49:16,670 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:49:16,670 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:49:46,673 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:49:46,673 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:50:16,674 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:50:16,674 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:50:46,676 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:50:46,676 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:51:16,679 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:51:16,679 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:51:46,681 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:51:46,682 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:53:53,626 WARN [Thread-15][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-05-06 23:53:53,626 WARN [Thread-21][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-05-06 23:53:53,659 WARN [Thread-21][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-05-06 23:53:53,688 WARN [Thread-15][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-05-06 23:53:59,493 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[qq-system-service] 2023-05-06 23:54:00,463 DEBUG [main][LogFactory.java:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[qq-system-service] 2023-05-06 23:54:00,529 INFO [main][GenericScope.java:295] - BeanFactory id=1bdb3891-25ff-35f6-8e46-72458962267f
+[qq-system-service] 2023-05-06 23:54:00,919 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 60030 (http)
+[qq-system-service] 2023-05-06 23:54:00,930 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:54:00,930 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[qq-system-service] 2023-05-06 23:54:00,931 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+[qq-system-service] 2023-05-06 23:54:01,037 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[qq-system-service] 2023-05-06 23:54:01,037 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1515 ms
+[qq-system-service] 2023-05-06 23:54:01,279 DEBUG [main][HikariConfig.java:946] - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+[qq-system-service] 2023-05-06 23:54:02,447 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:54:02,447 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:54:02,452 WARN [main][URLConfigurationSource.java:126] - No URLs will be polled as dynamic configuration sources.
+[qq-system-service] 2023-05-06 23:54:02,452 INFO [main][URLConfigurationSource.java:127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[qq-system-service] 2023-05-06 23:54:02,547 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 23:54:02,812 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-06 23:54:03,292 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[qq-system-service] 2023-05-06 23:54:03,858 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:54:03,874 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 60030 is already in use
+[qq-system-service] 2023-05-06 23:54:10,873 INFO [main][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-06 23:54:10,879 INFO [main][DirectJDKLog.java:173] - Pausing ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:54:10,879 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[qq-system-service] 2023-05-06 23:54:10,883 INFO [main][DirectJDKLog.java:173] - Stopping ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:54:10,883 INFO [main][DirectJDKLog.java:173] - Destroying ProtocolHandler ["http-nio-60030"]
+[qq-system-service] 2023-05-06 23:54:10,890 INFO [main][ConditionEvaluationReportLoggingListener.java:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[qq-system-service] 2023-05-06 23:54:10,895 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 60030 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 60030 or configure this application to listen on another port.
+
+[qq-system-service] 2023-05-06 23:54:57,375 WARN [HikariPool-1 housekeeper][HikariPool.java:787] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m10s687ms959µs).
+[qq-system-service] 2023-05-06 23:54:57,376 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:54:57,377 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:54:57,380 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@174ee425 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@6c851821
+[qq-system-service] 2023-05-06 23:54:57,394 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@60a81e98 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@6c851821
+[qq-system-service] 2023-05-06 23:54:57,935 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@6feca917 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@6c851821
+[qq-system-service] 2023-05-06 23:55:27,378 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:55:27,378 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:55:57,381 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:55:57,383 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:56:27,386 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:56:27,386 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:56:57,388 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:56:57,388 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:57:27,390 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:57:27,390 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:57:57,393 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:57:57,393 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:58:27,393 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:58:27,394 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:58:57,395 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:58:57,395 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:59:27,399 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:59:27,399 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-05-06 23:59:57,399 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-06 23:59:57,399 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.

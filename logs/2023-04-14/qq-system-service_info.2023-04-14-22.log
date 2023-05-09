@@ -1,0 +1,556 @@
+[qq-system-service] 2023-04-14 22:00:19,014 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:00:19,014 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:00:37,006 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:332] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, chid=0x1] channelInactive()
+[qq-system-service] 2023-04-14 22:00:37,006 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:463] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, epid=0x1] deactivating endpoint handler
+[qq-system-service] 2023-04-14 22:00:37,006 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:645] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, epid=0x1] notifyQueuedCommands adding 0 command(s) to buffer
+[qq-system-service] 2023-04-14 22:00:37,006 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:358] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, chid=0x1] channelInactive() done
+[qq-system-service] 2023-04-14 22:00:37,007 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:188] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] channelInactive()
+[qq-system-service] 2023-04-14 22:00:37,007 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:00:37,007 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 1, delay 1ms
+[qq-system-service] 2023-04-14 22:00:37,008 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:198] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, chid=0x1] channelUnregistered()
+[qq-system-service] 2023-04-14 22:00:37,124 INFO [lettuce-eventExecutorLoop-1-3][AbstractInternalLogger.java:171] - Reconnecting, last destination was /152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:00:37,126 DEBUG [lettuce-eventExecutorLoop-1-3][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:00:37,131 DEBUG [lettuce-eventExecutorLoop-1-3][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:00:37,133 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:181] - [channel=0x6953c30b, [id: 0x28924adf] (inactive), chid=0x2] channelRegistered()
+[qq-system-service] 2023-04-14 22:00:47,143 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: connection timed out: /152.32.252.204:6379
+io.netty.channel.ConnectTimeoutException: connection timed out: /152.32.252.204:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:00:47,148 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:00:47,148 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 2, delay 2ms
+[qq-system-service] 2023-04-14 22:00:47,149 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:198] - [channel=0x6953c30b, [id: 0x28924adf] (inactive), chid=0x2] channelUnregistered()
+[qq-system-service] 2023-04-14 22:00:47,220 INFO [lettuce-eventExecutorLoop-1-4][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:00:47,221 DEBUG [lettuce-eventExecutorLoop-1-4][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:00:47,223 DEBUG [lettuce-eventExecutorLoop-1-4][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:00:47,227 DEBUG [lettuce-nioEventLoop-4-3][CommandHandler.java:181] - [channel=0x72c9a327, [id: 0x124310b6] (inactive), chid=0x3] channelRegistered()
+[qq-system-service] 2023-04-14 22:00:49,018 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:00:49,018 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:00:57,232 DEBUG [lettuce-nioEventLoop-4-3][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: connection timed out: /152.32.252.204:6379
+io.netty.channel.ConnectTimeoutException: connection timed out: /152.32.252.204:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:00:57,233 DEBUG [lettuce-nioEventLoop-4-3][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:00:57,233 DEBUG [lettuce-nioEventLoop-4-3][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 3, delay 4ms
+[qq-system-service] 2023-04-14 22:00:57,233 DEBUG [lettuce-nioEventLoop-4-3][CommandHandler.java:198] - [channel=0x72c9a327, [id: 0x124310b6] (inactive), chid=0x3] channelUnregistered()
+[qq-system-service] 2023-04-14 22:00:57,309 INFO [lettuce-eventExecutorLoop-1-5][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:00:57,310 DEBUG [lettuce-eventExecutorLoop-1-5][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:00:57,310 DEBUG [lettuce-eventExecutorLoop-1-5][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:00:57,312 DEBUG [lettuce-nioEventLoop-4-4][CommandHandler.java:181] - [channel=0x1dc620be, [id: 0x36b6bcf1] (inactive), chid=0x4] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:07,327 DEBUG [lettuce-nioEventLoop-4-4][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: connection timed out: /152.32.252.204:6379
+io.netty.channel.ConnectTimeoutException: connection timed out: /152.32.252.204:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:07,327 DEBUG [lettuce-nioEventLoop-4-4][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:07,328 DEBUG [lettuce-nioEventLoop-4-4][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 4, delay 8ms
+[qq-system-service] 2023-04-14 22:01:07,328 DEBUG [lettuce-nioEventLoop-4-4][CommandHandler.java:198] - [channel=0x1dc620be, [id: 0x36b6bcf1] (inactive), chid=0x4] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:07,421 INFO [lettuce-eventExecutorLoop-1-6][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:07,422 DEBUG [lettuce-eventExecutorLoop-1-6][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:07,422 DEBUG [lettuce-eventExecutorLoop-1-6][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:07,424 DEBUG [lettuce-nioEventLoop-4-5][CommandHandler.java:181] - [channel=0x65792d5d, [id: 0xe495cc63] (inactive), chid=0x5] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:09,711 DEBUG [lettuce-nioEventLoop-4-5][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:09,712 DEBUG [lettuce-nioEventLoop-4-5][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:09,712 DEBUG [lettuce-nioEventLoop-4-5][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 5, delay 16ms
+[qq-system-service] 2023-04-14 22:01:09,712 DEBUG [lettuce-nioEventLoop-4-5][CommandHandler.java:198] - [channel=0x65792d5d, [id: 0xe495cc63] (inactive), chid=0x5] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:09,818 DEBUG [lettuce-eventExecutorLoop-1-7][AbstractInternalLogger.java:168] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:09,818 DEBUG [lettuce-eventExecutorLoop-1-7][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:09,820 DEBUG [lettuce-eventExecutorLoop-1-7][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:09,822 DEBUG [lettuce-nioEventLoop-4-6][CommandHandler.java:181] - [channel=0x001b2afb, [id: 0x7119dfb2] (inactive), chid=0x6] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:18,099 DEBUG [lettuce-nioEventLoop-4-6][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection timed out: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:18,100 DEBUG [lettuce-nioEventLoop-4-6][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:18,100 DEBUG [lettuce-nioEventLoop-4-6][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 6, delay 32ms
+[qq-system-service] 2023-04-14 22:01:18,100 DEBUG [lettuce-nioEventLoop-4-6][CommandHandler.java:198] - [channel=0x001b2afb, [id: 0x7119dfb2] (inactive), chid=0x6] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:18,224 INFO [lettuce-eventExecutorLoop-1-8][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:18,224 DEBUG [lettuce-eventExecutorLoop-1-8][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:18,225 DEBUG [lettuce-eventExecutorLoop-1-8][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:18,227 DEBUG [lettuce-nioEventLoop-4-7][CommandHandler.java:181] - [channel=0xc9e8d78f, [id: 0x6c6edfaf] (inactive), chid=0x7] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:19,020 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:01:19,020 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:01:20,520 DEBUG [lettuce-nioEventLoop-4-7][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:20,520 DEBUG [lettuce-nioEventLoop-4-7][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:20,520 DEBUG [lettuce-nioEventLoop-4-7][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 7, delay 64ms
+[qq-system-service] 2023-04-14 22:01:20,520 DEBUG [lettuce-nioEventLoop-4-7][CommandHandler.java:198] - [channel=0xc9e8d78f, [id: 0x6c6edfaf] (inactive), chid=0x7] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:20,609 DEBUG [lettuce-eventExecutorLoop-1-1][AbstractInternalLogger.java:168] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:20,609 DEBUG [lettuce-eventExecutorLoop-1-1][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:20,610 DEBUG [lettuce-eventExecutorLoop-1-1][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:20,611 DEBUG [lettuce-nioEventLoop-4-8][CommandHandler.java:181] - [channel=0xa2acdc43, [id: 0xf9f81db8] (inactive), chid=0x8] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:22,902 DEBUG [lettuce-nioEventLoop-4-8][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:22,902 DEBUG [lettuce-nioEventLoop-4-8][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:22,902 DEBUG [lettuce-nioEventLoop-4-8][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 8, delay 128ms
+[qq-system-service] 2023-04-14 22:01:22,902 DEBUG [lettuce-nioEventLoop-4-8][CommandHandler.java:198] - [channel=0xa2acdc43, [id: 0xf9f81db8] (inactive), chid=0x8] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:23,117 DEBUG [lettuce-eventExecutorLoop-1-2][AbstractInternalLogger.java:168] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:23,117 DEBUG [lettuce-eventExecutorLoop-1-2][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:23,118 DEBUG [lettuce-eventExecutorLoop-1-2][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:23,119 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:181] - [channel=0x7e603e45, [id: 0x0f5aa303] (inactive), chid=0x9] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:26,851 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:26,851 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:26,851 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 9, delay 256ms
+[qq-system-service] 2023-04-14 22:01:26,851 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:198] - [channel=0x7e603e45, [id: 0x0f5aa303] (inactive), chid=0x9] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:27,123 INFO [lettuce-eventExecutorLoop-1-3][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:27,123 DEBUG [lettuce-eventExecutorLoop-1-3][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:27,123 DEBUG [lettuce-eventExecutorLoop-1-3][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:27,124 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:181] - [channel=0xaae654ff, [id: 0xaa6a8d44] (inactive), chid=0xa] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:37,134 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: connection timed out: /152.32.252.204:6379
+io.netty.channel.ConnectTimeoutException: connection timed out: /152.32.252.204:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:37,135 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:37,135 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 10, delay 512ms
+[qq-system-service] 2023-04-14 22:01:37,135 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:198] - [channel=0xaae654ff, [id: 0xaa6a8d44] (inactive), chid=0xa] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:37,709 INFO [lettuce-eventExecutorLoop-1-4][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:37,710 DEBUG [lettuce-eventExecutorLoop-1-4][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:37,710 DEBUG [lettuce-eventExecutorLoop-1-4][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:37,712 DEBUG [lettuce-nioEventLoop-4-3][CommandHandler.java:181] - [channel=0x823b3664, [id: 0x865a5b16] (inactive), chid=0xb] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:47,456 DEBUG [lettuce-nioEventLoop-4-3][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:47,457 DEBUG [lettuce-nioEventLoop-4-3][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:47,457 DEBUG [lettuce-nioEventLoop-4-3][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 11, delay 1024ms
+[qq-system-service] 2023-04-14 22:01:47,457 DEBUG [lettuce-nioEventLoop-4-3][CommandHandler.java:198] - [channel=0x823b3664, [id: 0x865a5b16] (inactive), chid=0xb] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:48,510 INFO [lettuce-eventExecutorLoop-1-5][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:48,510 DEBUG [lettuce-eventExecutorLoop-1-5][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:48,511 DEBUG [lettuce-eventExecutorLoop-1-5][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:48,512 DEBUG [lettuce-nioEventLoop-4-4][CommandHandler.java:181] - [channel=0x10b0bd92, [id: 0xe96d3db4] (inactive), chid=0xc] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:49,035 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:01:49,035 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:01:50,795 DEBUG [lettuce-nioEventLoop-4-4][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:50,795 DEBUG [lettuce-nioEventLoop-4-4][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:50,795 DEBUG [lettuce-nioEventLoop-4-4][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 12, delay 2048ms
+[qq-system-service] 2023-04-14 22:01:50,795 DEBUG [lettuce-nioEventLoop-4-4][CommandHandler.java:198] - [channel=0x10b0bd92, [id: 0xe96d3db4] (inactive), chid=0xc] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:52,915 DEBUG [lettuce-eventExecutorLoop-1-6][AbstractInternalLogger.java:168] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:52,915 DEBUG [lettuce-eventExecutorLoop-1-6][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:52,916 DEBUG [lettuce-eventExecutorLoop-1-6][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:52,917 DEBUG [lettuce-nioEventLoop-4-5][CommandHandler.java:181] - [channel=0x73164e6b, [id: 0x314631c9] (inactive), chid=0xd] channelRegistered()
+[qq-system-service] 2023-04-14 22:01:55,197 DEBUG [lettuce-nioEventLoop-4-5][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:01:55,197 DEBUG [lettuce-nioEventLoop-4-5][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:01:55,198 DEBUG [lettuce-nioEventLoop-4-5][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 13, delay 4096ms
+[qq-system-service] 2023-04-14 22:01:55,198 DEBUG [lettuce-nioEventLoop-4-5][CommandHandler.java:198] - [channel=0x73164e6b, [id: 0x314631c9] (inactive), chid=0xd] channelUnregistered()
+[qq-system-service] 2023-04-14 22:01:59,315 INFO [lettuce-eventExecutorLoop-1-7][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:59,315 DEBUG [lettuce-eventExecutorLoop-1-7][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:01:59,316 DEBUG [lettuce-eventExecutorLoop-1-7][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:01:59,317 DEBUG [lettuce-nioEventLoop-4-6][CommandHandler.java:181] - [channel=0x6927501a, [id: 0x321b1fff] (inactive), chid=0xe] channelRegistered()
+[qq-system-service] 2023-04-14 22:02:01,618 DEBUG [lettuce-nioEventLoop-4-6][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:02:01,618 DEBUG [lettuce-nioEventLoop-4-6][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:02:01,618 DEBUG [lettuce-nioEventLoop-4-6][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 14, delay 8192ms
+[qq-system-service] 2023-04-14 22:02:01,618 DEBUG [lettuce-nioEventLoop-4-6][CommandHandler.java:198] - [channel=0x6927501a, [id: 0x321b1fff] (inactive), chid=0xe] channelUnregistered()
+[qq-system-service] 2023-04-14 22:02:09,912 INFO [lettuce-eventExecutorLoop-1-8][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:02:09,912 DEBUG [lettuce-eventExecutorLoop-1-8][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:02:09,913 DEBUG [lettuce-eventExecutorLoop-1-8][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:02:09,914 DEBUG [lettuce-nioEventLoop-4-7][CommandHandler.java:181] - [channel=0xc96b9f39, [id: 0x05c1ac19] (inactive), chid=0xf] channelRegistered()
+[qq-system-service] 2023-04-14 22:02:12,200 DEBUG [lettuce-nioEventLoop-4-7][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:02:12,200 DEBUG [lettuce-nioEventLoop-4-7][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:02:12,200 DEBUG [lettuce-nioEventLoop-4-7][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 15, delay 16384ms
+[qq-system-service] 2023-04-14 22:02:12,200 DEBUG [lettuce-nioEventLoop-4-7][CommandHandler.java:198] - [channel=0xc96b9f39, [id: 0x05c1ac19] (inactive), chid=0xf] channelUnregistered()
+[qq-system-service] 2023-04-14 22:02:19,050 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:02:19,050 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:02:28,620 INFO [lettuce-eventExecutorLoop-1-1][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:02:28,620 DEBUG [lettuce-eventExecutorLoop-1-1][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:02:28,621 DEBUG [lettuce-eventExecutorLoop-1-1][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:02:28,622 DEBUG [lettuce-nioEventLoop-4-8][CommandHandler.java:181] - [channel=0x1cc60e85, [id: 0x6d02cc28] (inactive), chid=0x10] channelRegistered()
+[qq-system-service] 2023-04-14 22:02:38,624 DEBUG [lettuce-nioEventLoop-4-8][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: connection timed out: /152.32.252.204:6379
+io.netty.channel.ConnectTimeoutException: connection timed out: /152.32.252.204:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:02:38,625 DEBUG [lettuce-nioEventLoop-4-8][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:02:38,625 DEBUG [lettuce-nioEventLoop-4-8][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 16, delay 30000ms
+[qq-system-service] 2023-04-14 22:02:38,625 DEBUG [lettuce-nioEventLoop-4-8][CommandHandler.java:198] - [channel=0x1cc60e85, [id: 0x6d02cc28] (inactive), chid=0x10] channelUnregistered()
+[qq-system-service] 2023-04-14 22:02:49,061 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:02:49,061 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:03:08,714 INFO [lettuce-eventExecutorLoop-1-2][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:03:08,714 DEBUG [lettuce-eventExecutorLoop-1-2][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:03:08,715 DEBUG [lettuce-eventExecutorLoop-1-2][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:03:08,717 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:181] - [channel=0xd98a6928, [id: 0x0d25bfa5] (inactive), chid=0x11] channelRegistered()
+[qq-system-service] 2023-04-14 22:03:11,033 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:327] - Cannot reconnect to [152.32.252.204:6379]: Connection refused: no further information: /152.32.252.204:6379
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /152.32.252.204:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[qq-system-service] 2023-04-14 22:03:11,034 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:218] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] scheduleReconnect()
+[qq-system-service] 2023-04-14 22:03:11,034 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:235] - [channel=0x40a13de2, /192.168.1.6:13230 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect attempt 17, delay 30000ms
+[qq-system-service] 2023-04-14 22:03:11,034 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:198] - [channel=0xd98a6928, [id: 0x0d25bfa5] (inactive), chid=0x11] channelUnregistered()
+[qq-system-service] 2023-04-14 22:03:19,068 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:03:19,068 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:03:41,123 INFO [lettuce-eventExecutorLoop-1-3][AbstractInternalLogger.java:171] - Reconnecting, last destination was 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:03:41,123 DEBUG [lettuce-eventExecutorLoop-1-3][RedisClient.java:775] - Resolved SocketAddress 152.32.252.204:6379 using RedisURI [host='152.32.252.204', port=6379]
+[qq-system-service] 2023-04-14 22:03:41,124 DEBUG [lettuce-eventExecutorLoop-1-3][ReconnectionHandler.java:126] - Reconnecting to Redis at 152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:03:41,125 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:181] - [channel=0xc81e4589, [id: 0x02e87374] (inactive), chid=0x12] channelRegistered()
+[qq-system-service] 2023-04-14 22:03:41,176 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:294] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] channelActive()
+[qq-system-service] 2023-04-14 22:03:41,177 DEBUG [lettuce-nioEventLoop-4-2][DefaultEndpoint.java:421] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] activateEndpointAndExecuteBufferedCommands 0 command(s) buffered
+[qq-system-service] 2023-04-14 22:03:41,177 DEBUG [lettuce-nioEventLoop-4-2][DefaultEndpoint.java:426] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] activating endpoint
+[qq-system-service] 2023-04-14 22:03:41,177 DEBUG [lettuce-nioEventLoop-4-2][DefaultEndpoint.java:508] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] flushCommands()
+[qq-system-service] 2023-04-14 22:03:41,177 DEBUG [lettuce-nioEventLoop-4-2][DefaultEndpoint.java:523] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] flushCommands() Flushing 0 commands
+[qq-system-service] 2023-04-14 22:03:41,177 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:180] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] channelActive()
+[qq-system-service] 2023-04-14 22:03:41,177 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:308] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] channelActive() done
+[qq-system-service] 2023-04-14 22:03:41,177 INFO [lettuce-nioEventLoop-4-2][ReconnectionHandler.java:191] - Reconnected to 152.32.252.204:6379, Channel channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379
+[qq-system-service] 2023-04-14 22:03:41,177 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:148] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] userEventTriggered(ctx, io.lettuce.core.ConnectionEvents$Activated@7c125147)
+[qq-system-service] 2023-04-14 22:03:49,073 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:03:49,073 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:04:07,366 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@11cf7d52 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,367 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@11cf7d52: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,368 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@332a29b0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,368 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@332a29b0: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,369 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@5305d6ff (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,369 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5305d6ff: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,371 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@574be94b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,371 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@574be94b: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,372 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@5e7c2fbb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,373 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5e7c2fbb: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,374 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@7e91009d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,374 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7e91009d: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,375 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@5a56fe91 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,375 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5a56fe91: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,377 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@51e50993 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,377 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@51e50993: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,379 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@7e7e76cf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,379 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@7e7e76cf: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,380 WARN [http-nio-60080-exec-10][PoolBase.java:184] - HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@5d3e5516 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+[qq-system-service] 2023-04-14 22:04:07,380 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5d3e5516: (connection is dead)
+[qq-system-service] 2023-04-14 22:04:07,380 DEBUG [http-nio-60080-exec-10][HikariPool.java:342] - HikariPool-1 - Add connection elided, waiting 1, queue 9
+[qq-system-service] 2023-04-14 22:04:08,284 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4a1213d7
+[qq-system-service] 2023-04-14 22:04:08,285 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=1, active=1, idle=0, waiting=0)
+[qq-system-service] 2023-04-14 22:04:08,342 DEBUG [http-nio-60080-exec-10][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:04:08,342 DEBUG [http-nio-60080-exec-10][DefaultEndpoint.java:389] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:04:08,342 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:374] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-04-14 22:04:08,342 DEBUG [http-nio-60080-exec-10][DefaultEndpoint.java:173] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() done
+[qq-system-service] 2023-04-14 22:04:08,343 DEBUG [lettuce-nioEventLoop-4-2][CommandEncoder.java:101] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:04:08,396 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:570] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-04-14 22:04:08,396 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:616] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Stack contains: 1 commands
+[qq-system-service] 2023-04-14 22:04:08,396 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:04:08,396 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-04-14 22:04:09,691 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2a3dec98
+[qq-system-service] 2023-04-14 22:04:10,063 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2e73b214
+[qq-system-service] 2023-04-14 22:04:10,063 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=3, active=0, idle=3, waiting=0)
+[qq-system-service] 2023-04-14 22:04:10,787 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@37c500c3
+[qq-system-service] 2023-04-14 22:04:10,787 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=4, active=0, idle=4, waiting=0)
+[qq-system-service] 2023-04-14 22:04:11,164 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4e7ec988
+[qq-system-service] 2023-04-14 22:04:11,164 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+[qq-system-service] 2023-04-14 22:04:12,101 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@268f6076
+[qq-system-service] 2023-04-14 22:04:12,101 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=6, active=0, idle=6, waiting=0)
+[qq-system-service] 2023-04-14 22:04:13,525 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3c1959ae
+[qq-system-service] 2023-04-14 22:04:13,525 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=7, active=0, idle=7, waiting=0)
+[qq-system-service] 2023-04-14 22:04:14,177 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2c406340
+[qq-system-service] 2023-04-14 22:04:14,177 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=8, active=0, idle=8, waiting=0)
+[qq-system-service] 2023-04-14 22:04:14,567 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@23fec292
+[qq-system-service] 2023-04-14 22:04:14,567 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=9, active=0, idle=9, waiting=0)
+[qq-system-service] 2023-04-14 22:04:16,219 DEBUG [HikariPool-1 connection adder][HikariPool.java:728] - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@169f4ab4
+[qq-system-service] 2023-04-14 22:04:16,219 DEBUG [HikariPool-1 connection adder][HikariPool.java:421] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:04:19,074 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:04:19,074 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:04:49,088 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:04:49,088 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:05:02,177 DEBUG [http-nio-60080-exec-1][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:02,181 DEBUG [http-nio-60080-exec-1][DefaultEndpoint.java:389] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:02,181 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:374] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-04-14 22:05:02,182 DEBUG [http-nio-60080-exec-1][DefaultEndpoint.java:173] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() done
+[qq-system-service] 2023-04-14 22:05:02,182 DEBUG [lettuce-nioEventLoop-4-2][CommandEncoder.java:101] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:02,234 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:570] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-04-14 22:05:02,234 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:616] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Stack contains: 1 commands
+[qq-system-service] 2023-04-14 22:05:02,234 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:02,234 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-04-14 22:05:03,234 DEBUG [http-nio-60080-exec-3][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:03,234 DEBUG [http-nio-60080-exec-3][DefaultEndpoint.java:389] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:03,234 DEBUG [http-nio-60080-exec-3][DefaultEndpoint.java:173] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() done
+[qq-system-service] 2023-04-14 22:05:03,234 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:374] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-04-14 22:05:03,235 DEBUG [lettuce-nioEventLoop-4-2][CommandEncoder.java:101] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:03,288 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:570] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-04-14 22:05:03,288 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:616] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Stack contains: 1 commands
+[qq-system-service] 2023-04-14 22:05:03,288 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:03,288 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-04-14 22:05:03,874 DEBUG [http-nio-60080-exec-5][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:03,874 DEBUG [http-nio-60080-exec-5][DefaultEndpoint.java:389] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:03,874 DEBUG [http-nio-60080-exec-5][DefaultEndpoint.java:173] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() done
+[qq-system-service] 2023-04-14 22:05:03,874 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:374] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-04-14 22:05:03,875 DEBUG [lettuce-nioEventLoop-4-2][CommandEncoder.java:101] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:03,923 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:570] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-04-14 22:05:03,924 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:616] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Stack contains: 1 commands
+[qq-system-service] 2023-04-14 22:05:03,924 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:03,924 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-04-14 22:05:04,190 DEBUG [http-nio-60080-exec-7][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:04,192 DEBUG [http-nio-60080-exec-7][DefaultEndpoint.java:389] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:04,192 DEBUG [http-nio-60080-exec-7][DefaultEndpoint.java:173] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() done
+[qq-system-service] 2023-04-14 22:05:04,192 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:374] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-04-14 22:05:04,193 DEBUG [lettuce-nioEventLoop-4-2][CommandEncoder.java:101] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:04,241 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:570] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-04-14 22:05:04,241 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:616] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Stack contains: 1 commands
+[qq-system-service] 2023-04-14 22:05:04,241 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:04,241 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-04-14 22:05:04,526 DEBUG [http-nio-60080-exec-10][RedisChannelHandler.java:179] - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:04,527 DEBUG [http-nio-60080-exec-10][DefaultEndpoint.java:389] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:04,527 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:374] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[qq-system-service] 2023-04-14 22:05:04,527 DEBUG [http-nio-60080-exec-10][DefaultEndpoint.java:173] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] write() done
+[qq-system-service] 2023-04-14 22:05:04,527 DEBUG [lettuce-nioEventLoop-4-2][CommandEncoder.java:101] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:04,576 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:570] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Received: 5 bytes, 1 commands in the stack
+[qq-system-service] 2023-04-14 22:05:04,576 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:616] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] Stack contains: 1 commands
+[qq-system-service] 2023-04-14 22:05:04,576 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:131] - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[qq-system-service] 2023-04-14 22:05:04,576 DEBUG [lettuce-nioEventLoop-4-2][RedisStateMachine.java:145] - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[qq-system-service] 2023-04-14 22:05:19,090 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:05:19,090 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:05:49,100 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:05:49,100 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:06:19,107 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:06:19,107 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:06:49,111 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:06:49,111 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:07:19,125 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:07:19,125 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:07:49,135 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:07:49,135 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:08:19,141 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:08:19,141 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:08:49,157 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:08:49,157 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:09:19,167 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:09:19,167 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:09:49,176 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:09:49,176 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:10:19,182 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:10:19,182 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:10:49,190 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:10:49,190 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:11:19,204 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:11:19,204 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:11:49,216 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:11:49,216 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:12:19,220 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:12:19,220 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:12:49,225 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:12:49,225 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:13:19,238 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:13:19,238 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:13:49,252 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:13:49,252 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:14:19,266 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:14:19,266 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:14:49,273 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:14:49,273 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[qq-system-service] 2023-04-14 22:15:07,937 WARN [Thread-11][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-04-14 22:15:07,937 WARN [Thread-18][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-04-14 22:15:07,937 WARN [Thread-18][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-04-14 22:15:07,938 WARN [Thread-11][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-04-14 22:15:08,088 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-04-14 22:15:08,089 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:90] - De-registering from Nacos Server now...
+[qq-system-service] 2023-04-14 22:15:08,093 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:110] - De-registration finished.
+[qq-system-service] 2023-04-14 22:15:08,353 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@3022b927 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@7dd45c93
+[qq-system-service] 2023-04-14 22:15:13,444 WARN [SpringContextShutdownHook][DisposableBeanAdapter.java:290] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+[qq-system-service] 2023-04-14 22:15:13,445 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-04-14 22:15:13,452 DEBUG [SpringContextShutdownHook][RedisChannelHandler.java:145] - closeAsync()
+[qq-system-service] 2023-04-14 22:15:13,452 DEBUG [SpringContextShutdownHook][DefaultEndpoint.java:549] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] closeAsync()
+[qq-system-service] 2023-04-14 22:15:13,453 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:332] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] channelInactive()
+[qq-system-service] 2023-04-14 22:15:13,454 DEBUG [lettuce-nioEventLoop-4-2][DefaultEndpoint.java:463] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, epid=0x1] deactivating endpoint handler
+[qq-system-service] 2023-04-14 22:15:13,454 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:358] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] channelInactive() done
+[qq-system-service] 2023-04-14 22:15:13,454 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:188] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] channelInactive()
+[qq-system-service] 2023-04-14 22:15:13,454 DEBUG [lettuce-nioEventLoop-4-2][ConnectionWatchdog.java:199] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, last known addr=/152.32.252.204:6379] Reconnect scheduling disabled
+[qq-system-service] 2023-04-14 22:15:13,454 DEBUG [lettuce-nioEventLoop-4-2][CommandHandler.java:198] - [channel=0xc81e4589, /192.168.1.6:14518 -> /152.32.252.204:6379, chid=0x12] channelUnregistered()
+[qq-system-service] 2023-04-14 22:15:13,455 DEBUG [SpringContextShutdownHook][AbstractRedisClient.java:474] - Initiate shutdown (100, 100, MILLISECONDS)
+[qq-system-service] 2023-04-14 22:15:13,458 DEBUG [SpringContextShutdownHook][DefaultEventLoopGroupProvider.java:226] - Release executor io.netty.channel.nio.NioEventLoopGroup@51455f64
+[qq-system-service] 2023-04-14 22:15:13,459 DEBUG [lettuce-nioEventLoop-4-3][PoolThreadCache.java:224] - Freed 1 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-3
+[qq-system-service] 2023-04-14 22:15:13,459 DEBUG [lettuce-nioEventLoop-4-1][PoolThreadCache.java:224] - Freed 6 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-1
+[qq-system-service] 2023-04-14 22:15:13,459 DEBUG [lettuce-nioEventLoop-4-7][PoolThreadCache.java:224] - Freed 1 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-7
+[qq-system-service] 2023-04-14 22:15:13,459 DEBUG [lettuce-nioEventLoop-4-6][PoolThreadCache.java:224] - Freed 1 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-6
+[qq-system-service] 2023-04-14 22:15:13,460 DEBUG [lettuce-nioEventLoop-4-5][PoolThreadCache.java:224] - Freed 1 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-5
+[qq-system-service] 2023-04-14 22:15:13,460 DEBUG [lettuce-nioEventLoop-4-8][PoolThreadCache.java:224] - Freed 1 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-8
+[qq-system-service] 2023-04-14 22:15:13,460 DEBUG [lettuce-nioEventLoop-4-4][PoolThreadCache.java:224] - Freed 1 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-4
+[qq-system-service] 2023-04-14 22:15:13,567 DEBUG [lettuce-nioEventLoop-4-2][PoolThreadCache.java:224] - Freed 7 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-2
+[qq-system-service] 2023-04-14 22:15:13,568 DEBUG [SpringContextShutdownHook][DefaultClientResources.java:631] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-04-14 22:15:13,570 DEBUG [SpringContextShutdownHook][DefaultEventLoopGroupProvider.java:263] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-04-14 22:15:13,572 INFO [SpringContextShutdownHook][HikariDataSource.java:350] - HikariPool-1 - Shutdown initiated...
+[qq-system-service] 2023-04-14 22:15:13,573 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-04-14 22:15:13,573 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4a1213d7: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,574 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@2a3dec98: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,574 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@2e73b214: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,575 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@37c500c3: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,575 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@4e7ec988: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,575 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@268f6076: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,575 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@3c1959ae: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,575 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@2c406340: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,575 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@23fec292: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,575 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@169f4ab4: (connection evicted)
+[qq-system-service] 2023-04-14 22:15:13,576 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[qq-system-service] 2023-04-14 22:15:13,576 INFO [SpringContextShutdownHook][HikariDataSource.java:352] - HikariPool-1 - Shutdown completed.

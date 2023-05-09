@@ -1,0 +1,14 @@
+[qq-system-service] 2023-04-28 05:39:11,165 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 60080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 60080 or configure this application to listen on another port.
+

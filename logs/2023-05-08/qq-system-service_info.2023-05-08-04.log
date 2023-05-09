@@ -1,0 +1,47 @@
+[qq-system-service] 2023-05-08 04:46:52,019 WARN [Thread-20][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-05-08 04:46:52,019 WARN [Thread-26][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-05-08 04:46:52,027 WARN [Thread-26][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-05-08 04:46:52,035 WARN [Thread-20][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-05-08 04:46:52,077 WARN [Thread-19][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[qq-system-service] 2023-05-08 04:46:52,077 WARN [Thread-25][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[qq-system-service] 2023-05-08 04:46:52,077 WARN [Thread-25][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[qq-system-service] 2023-05-08 04:46:52,082 WARN [Thread-19][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[qq-system-service] 2023-05-08 04:46:52,330 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-08 04:46:52,373 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[qq-system-service] 2023-05-08 04:46:52,383 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:90] - De-registering from Nacos Server now...
+[qq-system-service] 2023-05-08 04:46:52,385 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:90] - De-registering from Nacos Server now...
+[qq-system-service] 2023-05-08 04:46:52,387 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:110] - De-registration finished.
+[qq-system-service] 2023-05-08 04:46:52,388 INFO [SpringContextShutdownHook][NacosServiceRegistry.java:110] - De-registration finished.
+[qq-system-service] 2023-05-08 04:46:52,960 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@1281511e will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@2dcd451f
+[qq-system-service] 2023-05-08 04:46:52,962 DEBUG [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent][DefaultPublisher.java:193] - [NotifyCenter] the com.alibaba.nacos.client.naming.event.InstancesChangeEvent@783566d4 will received by com.alibaba.nacos.client.naming.event.InstancesChangeNotifier@3514237f
+[qq-system-service] 2023-05-08 04:47:01,408 WARN [SpringContextShutdownHook][DisposableBeanAdapter.java:290] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+[qq-system-service] 2023-05-08 04:47:01,411 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-08 04:47:01,412 WARN [SpringContextShutdownHook][DisposableBeanAdapter.java:290] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+[qq-system-service] 2023-05-08 04:47:01,419 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[qq-system-service] 2023-05-08 04:47:01,449 DEBUG [SpringContextShutdownHook][RedisChannelHandler.java:145] - closeAsync()
+[qq-system-service] 2023-05-08 04:47:01,449 DEBUG [SpringContextShutdownHook][DefaultEndpoint.java:549] - [channel=0xa6dc3c3d, /192.168.136.1:8825 -> /192.168.136.150:6379, epid=0x1] closeAsync()
+[qq-system-service] 2023-05-08 04:47:01,465 DEBUG [SpringContextShutdownHook][AbstractRedisClient.java:474] - Initiate shutdown (100, 100, MILLISECONDS)
+[qq-system-service] 2023-05-08 04:47:01,468 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:332] - [channel=0xa6dc3c3d, /192.168.136.1:8825 -> /192.168.136.150:6379, chid=0x1] channelInactive()
+[qq-system-service] 2023-05-08 04:47:01,469 DEBUG [lettuce-nioEventLoop-4-1][DefaultEndpoint.java:463] - [channel=0xa6dc3c3d, /192.168.136.1:8825 -> /192.168.136.150:6379, epid=0x1] deactivating endpoint handler
+[qq-system-service] 2023-05-08 04:47:01,470 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:358] - [channel=0xa6dc3c3d, /192.168.136.1:8825 -> /192.168.136.150:6379, chid=0x1] channelInactive() done
+[qq-system-service] 2023-05-08 04:47:01,471 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:188] - [channel=0xa6dc3c3d, /192.168.136.1:8825 -> /192.168.136.150:6379, last known addr=/192.168.136.150:6379] channelInactive()
+[qq-system-service] 2023-05-08 04:47:01,471 DEBUG [lettuce-nioEventLoop-4-1][ConnectionWatchdog.java:199] - [channel=0xa6dc3c3d, /192.168.136.1:8825 -> /192.168.136.150:6379, last known addr=/192.168.136.150:6379] Reconnect scheduling disabled
+[qq-system-service] 2023-05-08 04:47:01,471 DEBUG [lettuce-nioEventLoop-4-1][CommandHandler.java:198] - [channel=0xa6dc3c3d, /192.168.136.1:8825 -> /192.168.136.150:6379, chid=0x1] channelUnregistered()
+[qq-system-service] 2023-05-08 04:47:01,476 DEBUG [SpringContextShutdownHook][DefaultEventLoopGroupProvider.java:226] - Release executor io.netty.channel.nio.NioEventLoopGroup@24c5484d
+[qq-system-service] 2023-05-08 04:47:01,581 DEBUG [lettuce-nioEventLoop-4-1][PoolThreadCache.java:224] - Freed 6 thread-local buffer(s) from thread: lettuce-nioEventLoop-4-1
+[qq-system-service] 2023-05-08 04:47:01,589 DEBUG [SpringContextShutdownHook][DefaultClientResources.java:631] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-05-08 04:47:01,595 DEBUG [SpringContextShutdownHook][DefaultEventLoopGroupProvider.java:263] - Initiate shutdown (0, 2, SECONDS)
+[qq-system-service] 2023-05-08 04:47:01,600 INFO [SpringContextShutdownHook][HikariDataSource.java:350] - HikariPool-1 - Shutdown initiated...
+[qq-system-service] 2023-05-08 04:47:01,600 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+[qq-system-service] 2023-05-08 04:47:01,601 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@37a0baae: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,602 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@757b5527: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,602 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6bd2b9e8: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,603 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@43a4a334: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,603 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@6ed2047c: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,603 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@527e65f7: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,603 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@5038ed8e: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,604 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@50c1f1bb: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,604 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@39acbe9c: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,605 DEBUG [HikariPool-1 connection closer][PoolBase.java:134] - HikariPool-1 - Closing connection com.mysql.jdbc.JDBC4Connection@693d5904: (connection evicted)
+[qq-system-service] 2023-05-08 04:47:01,605 DEBUG [SpringContextShutdownHook][HikariPool.java:421] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[qq-system-service] 2023-05-08 04:47:01,605 INFO [SpringContextShutdownHook][HikariDataSource.java:352] - HikariPool-1 - Shutdown completed.

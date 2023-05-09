@@ -6,17 +6,13 @@ import lombok.Data;
 public class LoginDto {
 
     /**
-     * 用户登录手机号
+     * 用户登录账户
      */
-    private String username;
+    private String account;
 
     /**
      * 用户登录密码
      */
     private String password;
 
-    /**
-     * 用户类型
-     */
-    private String utype;
 }

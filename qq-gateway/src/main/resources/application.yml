@@ -4,12 +4,12 @@ spring:
   application:
     name: qq-gateway
   redis:
-    host: 152.32.252.204
+    host: 192.168.136.150
     port: 6379
   cloud:
     nacos:
       discovery:
-        server-addr: 152.32.252.204:8848   #注册中心nacos地址
+        server-addr: 192.168.136.150:8848   #注册中心nacos地址
     gateway:
       globalcors:
         cors-configurations:
@@ -21,58 +21,16 @@ spring:
               - PUT
               - DELETE
       routes:
-        - id: content
-          uri: lb://qq-content-service
-          predicates:
-            - Path=/content/**
-          filters:
-            - StripPrefix=1
         - id: system
           uri: lb://qq-system-service
           predicates:
             - Path=/system/**
           filters:
             - StripPrefix=1
-        - id: media
-          uri: lb://qq-media-service
+        - id: content
+          uri: lb://qq-content-service
           predicates:
-            - Path=/media/**
-          filters:
-            - StripPrefix=1
-        - id: auth
-          uri: lb://qq-system-service
-          predicates:
-            - Path=/auth/**
-          filters:
-            - StripPrefix=1
-        - id: basic
-          uri: lb://qq-basic-service
-          predicates:
-            - Path=/basic/**
-          filters:
-            - StripPrefix=1
-        - id: order
-          uri: lb://qq-order-service
-          predicates:
-            - Path=/order/**
-          filters:
-            - StripPrefix=1
-        - id: teaching
-          uri: lb://qq-teaching-service
-          predicates:
-            - Path=/teaching/**
-          filters:
-            - StripPrefix=1
-        - id: search
-          uri: lb://qq-search-service
-          predicates:
-            - Path=/search/**
-          filters:
-            - StripPrefix=1
-        - id: learning
-          uri: lb://qq-learning-service
-          predicates:
-            - Path=/learning/**
+            - Path=/content/**
           filters:
             - StripPrefix=1
 logging:

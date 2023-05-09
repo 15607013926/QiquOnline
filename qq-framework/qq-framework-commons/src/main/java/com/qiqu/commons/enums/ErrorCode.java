@@ -7,6 +7,8 @@ public enum ErrorCode {
 
     LOGINERROR(1001, "用户名或者密码错误"),
 
+    REGISTERERROR(1002, "用户已存在"),
+
     COMPANYERROR(9998, "机构id错误"),
 
     PARAMSERROR(9997, "参数错误"),

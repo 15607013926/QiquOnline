@@ -10,10 +10,10 @@ import java.util.Collections;
 
 public class CodeGenerator {
 
-    //  private static final String SERVICE_NAME = "content";
+      private static final String SERVICE_NAME = "content";
     // private static final String SERVICE_NAME = "learning";
     // private static final String SERVICE_NAME = "media";
-     private static final String SERVICE_NAME = "system";
+    //private static final String SERVICE_NAME = "system";
     // private static final String SERVICE_NAME = "system";
     // private static final String SERVICE_NAME = "basic";
 
@@ -96,7 +96,7 @@ public class CodeGenerator {
         return new GlobalConfig.Builder()
                 //.fileOverride()
                 .disableOpenDir()
-                .author("itheima")
+                .author("12441")
                 .dateType(DateType.ONLY_DATE)
                 .outputDir(javaPath).build();
     }

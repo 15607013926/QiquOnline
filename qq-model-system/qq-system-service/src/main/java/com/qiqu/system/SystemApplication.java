@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
+import springfox.documentation.oas.annotations.EnableOpenApi;
 
 /**
  * @Author 12441
@@ -14,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableDiscoveryClient
 @MapperScan("com.qiqu.system.mapper")//指定mapper包扫描范围
-@ComponentScan(basePackages = {"com.qiqu.system","com.qiqu.web"})//指定启动类扫描范围
+@ComponentScan(basePackages = {"com.qiqu.system","com.qiqu.web","com.qiqu.apidocument"})//指定启动类扫描范围
 public class SystemApplication {
     public static void main(String[] args) {
         SpringApplication.run(SystemApplication.class,args);
